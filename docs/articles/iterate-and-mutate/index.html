@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | The Iterate-and-Mutate Antipattern</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>The Iterate-and-Mutate Antipattern</h1>
+    
+    <p class="secondary">26 April, 2020</p>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/iterate-and-mutate/#every-language-is-c-and-other-lies">Every language is C (and other lies)</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/iterate-and-mutate/#think-about-it">Think about it</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/iterate-and-mutate/#conclusion-and-invocation">Conclusion and Invocation</a>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>Names are powerful things. To name something is to control it. For years, I've been cautioning friends and colleagues about the following, which I consider a code smell:</p>
+<pre data-lang="python" style="background-color:#282a36;color:#f8f8f2;" class="language-python "><code class="language-python" data-lang="python"><span>
+</span><span>enabled_users </span><span style="color:#ff79c6;">= </span><span>[]
+</span></code></pre>
+<p>marginnote 'filter' &quot;This code can be dramatically improved with many functional methods, in this case, a simple filter:<br/> <code>filter(users, is_user_enabled)</code> &quot; %}</p>
+<pre data-lang="python" style="background-color:#282a36;color:#f8f8f2;" class="language-python "><code class="language-python" data-lang="python"><span>
+</span><span style="color:#ff79c6;">for </span><span>user </span><span style="color:#ff79c6;">in </span><span>users:
+</span><span>    </span><span style="color:#ff79c6;">if </span><span>user</span><span style="color:#ff79c6;">.</span><span>enabled:
+</span><span>        enabled_users</span><span style="color:#ff79c6;">.</span><span style="color:#50fa7b;">append</span><span>(user)
+</span></code></pre>
+<p>The part that makes me narrow my eyes, and the way you can identify this, is setting a variable to a null-y value, then opening up a for loop. I'll go into why I consider this bad practice in this article.</p>
+<p>Until 3 days ago, I had no name for this pattern. Since Robb Shecter's <a href="https://dogsnog.blog/2020/04/23/the-iterate-and-mutate-programming-anti-pattern/">post</a>, I have one: <em>Iterate-and-mutate</em>.</p>
+<h2 id="every-language-is-c-and-other-lies">Every language is C (and other lies)</h2>
+<p>Programming languages aren't just ways to communicate instructions to machines, the are frameworks for thought.sidenote 'sapier' &quot;In natural languages, this is called the <a href="https://en.wikipedia.org/wiki/Linguistic_relativity">Sapir–Whorf hypothesis</a>&quot; %} Every language (nearly) supports <code>if</code> statements and <code>for</code> loops, so it is easy to solve your programming problems with these constructs. However, it's NOT easy to read this code after it has been written.</p>
+<p>We've all seen nested <code>if</code>s and <code>for</code>smarginfigure 'nested' &quot;https://imgur.com/AMZYrnM.png&quot; &quot;You get the idea&quot; %}, it's a famous way of writing spaghetti code. To understand the result of the <code>for</code> loop, the whole body must be inspected. Whoever looks at your code next must read many lines of code before they understand what is happening, because it can execute arbitrary, mutating, side-effecting code.</p>
+<h2 id="think-about-it">Think about it</h2>
+<p>If you were to analyse the flow and swap out <code>if</code>s and <code>for</code>s with higher-level alternatives, they will more readable. Let's look at my toy example above: Switching the filtering <code>for</code> loop with the <code>filter</code> function, allows the reader a hint to what KIND of iteration we are doing.</p>
+<pre data-lang="python" style="background-color:#282a36;color:#f8f8f2;" class="language-python "><code class="language-python" data-lang="python"><span>enabled_users </span><span style="color:#ff79c6;">= </span><span style="color:#8be9fd;">filter</span><span>(users, is_user_enabled)
+</span></code></pre>
+<p>Immediately they can reason more about the code, they know that:</p>
+<ul>
+<li>the new collection will have up to N itemssidenote 'nitems' &quot;Where N is the size of the original collection, <code>users</code> in my example&quot; %}</li>
+<li>it will be a subset of the original collection</li>
+<li>with some elements filtered out by some test codesidenote 'filterfn' &quot;The well-named function <code>is_user_enabled</code>&quot; %}</li>
+</ul>
+<p>If we'd used a <code>for</code> loop, the reader would know that it's a <code>for</code> loop. Thanks, I hate it.</p>
+<h2 id="conclusion-and-invocation">Conclusion and Invocation</h2>
+<p>Once you are aware of the iterate-and-mutate pattern, you'll be able to think more critically at what kind of problems you're solving. Nearly all problems we face as programmers are iteration problems. <code>for</code>s don't help us much, we need to subcategorise. You'll start using not just functional methods more,sidenote 'fnmethods' &quot;Such as <code>map</code>, <code>filter</code>, and list comprehensions&quot; %} but the other high-level features of your language: Higher-order functions, closures, recursion, fluent interfaces, dependent types - OH MY!</p>
+<p>In short, you might start enjoying again the great features that made you learn your language in the first place.</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

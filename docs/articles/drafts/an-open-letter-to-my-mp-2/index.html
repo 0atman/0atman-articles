@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | </title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1></h1>
+    
+    <div class="space"></div>
+
+
+
+    <p>Title: An open letter to my MP, Simon Hughes (take 2)
+Date: 2014-12-01 10:20
+Category: privacy</p>
+<p>Mr Hughes,</p>
+<p>On the 16th of July, you told me via email that
+<em><strong>&quot;I do all that I can to make sure that we maximise personal and collective security only in ways which improve, not erode our civil liberties, and roll back rather than increase unchecked intrusion into our lives&quot;</strong></em></p>
+<p>You went on to clarify,
+<em><strong>&quot;The clear intention of the new bill is to maintain the current powers of the police and security agencies and not to widen them.&quot;</strong></em></p>
+<p>And that DRIP will have an <em><strong>&quot;extremely short life.&quot;</strong></em></p>
+<p>I am writing to you today to simply ask you to honour your words in the Counter Terrorism and Security Bill debate tomorrow.</p>
+<p>We are not at war. We are not in a state of emergency. Terrorism is an insignificant statistical rounding error, It should be given proportional attention. Do not let a spectre erode our rights.</p>
+<p>Please stand against fearmongering. There is no pressure to rush through even more powers over our private digital lives, I say again: there is no emergency.</p>
+<p>Please vote against the Counter Terrorism and Security Bill.</p>
+<p>Thank you for your time in reading this,</p>
+<p>Tristram Oaten</p>
+<p>For more detailed information, I fully agree with the points raised by the Open Rights Group here: https://www.openrightsgroup.org/campaigns/drop-the-drip-clauses</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

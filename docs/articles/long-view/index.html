@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | A Long View</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>A Long View</h1>
+    
+    <p class="secondary">15 November, 2016</p>
+    
+    <div class="space"></div>
+
+
+
+    <p>Something to keep in mind:</p>
+<blockquote>
+<p>It might not feel like it today, but technology and science is a bigger story than Donald Trump. Think about it. Who ran Italy when Galileo made his discoveries? How was Italy even run back then? Who was king during the industrial revolution in England? The quirks and flaws of government leaders are not relevant information when studying the enlightenment. In the long run, the Galileos and James Watts of the world have even more influence than the Napoleons.</p>
+</blockquote>
+<blockquote>
+<p>And the fact that I can Google the answer to those above questions — that we have given humanity endless knowledge at the tap of a touchpad — will ultimately be recognized as more important than the identity of whoever sits in the White House, even if he has no attention span and boasts of sexual assaults. As horrible as 9/11 was, the fact that one single corporation might connect almost all of the world’s population on a single service is, in the long run, actually bigger news.&quot; -Steven Levy
+sidenote 'bc' 'https://backchannel.com/the-iphone-is-bigger-than-donald-trump-4be61d9f3ce0' %}</p>
+</blockquote>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

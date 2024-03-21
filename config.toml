@@ -1,0 +1,22 @@
+# The URL the site will be built for
+base_url = "https://0atman.com"
+title = "0atman's blog"
+description = "A remarkably complex markov chain."
+author = "Tris"
+
+#theme = "hook"
+output_dir = "docs"
+
+generate_feed = true
+compile_sass = true
+build_search_index = false
+
+[markdown]
+highlight_code = true
+highlight_theme = "dracula"
+
+[extra]
+links = [
+  { title = "Mail", href = "mailto:tris@duck.com" },
+  { title = "GitHub", href = "https://github.com/0atman" },
+]

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | Cory Doctorow, on hearing aids</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>Cory Doctorow, on hearing aids</h1>
+    
+    <p class="secondary">16 December, 2014</p>
+    
+    <div class="space"></div>
+
+
+
+    <p>If you’re my age and grew up with the Walkman or you’re little younger and you grow up with the iPod, you will have logged enough punishing earbud hours that by the time you reach a certain age you will almost certainly need a hearing aid</p>
+<p>It is vanishingly unlikely that that hearing aid will be a retro, beige, hipster, analog transistor hearing aid.</p>
+<p>Instead it will be a computer that you put in your body and, depending on how it works, it can:</p>
+<ol>
+<li>
+<p>Make you hear things that aren’t there</p>
+</li>
+<li>
+<p>Make you not hear things that are there</p>
+</li>
+<li>
+<p>Tell other people what you’ve heard</p>
+</li>
+</ol>
+<p><strong>We’ve got to get this right</strong>
+sidenote 'cory' 'https://www.youtube.com/watch?v=4ZqodxGufR8)' %}</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

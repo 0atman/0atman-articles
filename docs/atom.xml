@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>0atman&#x27;s blog</title>
+    <subtitle>A remarkably complex markov chain.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://0atman.com/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://0atman.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-06-16T00:00:00+00:00</updated>
+    <id>https://0atman.com/atom.xml</id>
+    <entry xml:lang="en">
+        <title>So You Want To Make A Fiction Podcast?</title>
+        <published>2021-06-16T00:00:00+00:00</published>
+        <updated>2021-06-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/make-fiction-podcast/"/>
+        <id>https://0atman.com/articles/make-fiction-podcast/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/make-fiction-podcast/">&lt;p&gt;{% marginfigure &#x27;lt logo&#x27; &amp;quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;yUiuyWd.png&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I started my first podcast, &lt;a href=&quot;http:&#x2F;&#x2F;lostterminal.com&quot;&gt;Lost Terminal&lt;&#x2F;a&gt;, exactly a year ago, and I have now published four, ten-episode seasons, four patreon-exclusive special episodes, and shipped dozens of shirts and posters to fans.
+This post contains everything I can think of to help you do the same.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;part-0-podcasts-are-fantastic&quot;&gt;Part 0: Podcasts are FANTASTIC.&lt;&#x2F;h1&gt;
+&lt;p&gt;They&#x27;re almost as simple as a blog to produce, but allow you to present your story or information in a much more evocative and personal medium: Voice, sound, and music.
+Additionally, and unlike something like Youtube or Spotify, you retain total control. All you need, essentially, is a website to host MP3s, and an XML file that tells people where those MP3s are. There are plenty of services that will do this for you for a few dollars a month (I use Spreaker&lt;label for=&quot;sn-1&quot;
+       class=&quot;margin-toggle sidenote-number&quot;&gt;
+&lt;&#x2F;label&gt;
+&lt;input type=&quot;checkbox&quot;
+  id=&quot;sn-1&quot;
+       class=&quot;margin-toggle&quot;&#x2F;&gt;
+
+&lt;span class=&quot;sidenote&quot;&gt;
+  https:&amp;#x2F;&amp;#x2F;spreaker.com
+&lt;&#x2F;span&gt;
+, but that&#x27;s what it boils down to: No gatekeepers, no monopolies, no algorithms.&lt;&#x2F;p&gt;
+&lt;p&gt;When you think of podcasts, you might think of the million talking-head interview or discussion shows. That&#x27;s not what I&#x27;m going to talk about here. For those to work, I think, you need a very different set of skills. I am going to talk about FICTION podcasts. Drama. Radio plays: Scripted, meaningful, careful, stories.
+Think Welcome to Night Vale{% sidenote &#x27;wtnv&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.welcometonightvale.com&quot;&gt;https:&#x2F;&#x2F;www.welcometonightvale.com&lt;&#x2F;a&gt;&amp;quot;%}, Within the Wires{% sidenote &#x27;wtw&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.nightvalepresents.com&#x2F;withinthewires&quot;&gt;https:&#x2F;&#x2F;www.nightvalepresents.com&#x2F;withinthewires&lt;&#x2F;a&gt;&amp;quot; %}, or Moonbase Theta, Out{% sidenote &#x27;mto&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;monkeymanproductions.com&#x2F;moonbase-theta-out&#x2F;&quot;&gt;https:&#x2F;&#x2F;monkeymanproductions.com&#x2F;moonbase-theta-out&#x2F;&lt;&#x2F;a&gt;&amp;quot; %}.&lt;&#x2F;p&gt;
+&lt;p&gt;This essay is in two parts, a case study and a summary of what I&#x27;ve learned along the way.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;part-1-a-case-study&quot;&gt;Part 1: A Case Study&lt;&#x2F;h1&gt;
+&lt;p&gt;In July of 2020 I was burnt out. I took a week off from my job to get my head straight, and by thursday of that week I had decompressed enough to start thinking properly. I realised that I could make a really great fiction experience using the technology I had developed to make a few of my music videos, such as my cover of Want You Gone, by Jonathan Coulton, the Portal 2 credits songsidenote &#x27;drums&#x27; &amp;quot;Fans of Lost Terminal may notice that I used the same drum pattern for the credits at the end of the episodes!&amp;quot; %}:
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;zvLGFe_8yWU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;The look of this 80s scrolling text on a CRT REALLY inspired me. I could make something retro, but futuristic! And so I started brainstorming what would become my podcast, Lost Terminalsidenote &#x27;ltbrainstorm&#x27; &amp;quot;&lt;a href=&quot;http:&#x2F;&#x2F;lostterminal.com&quot;&gt;http:&#x2F;&#x2F;lostterminal.com&lt;&#x2F;a&gt;&amp;quot; %}.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;working-within-my-constraints&quot;&gt;Working Within My Constraints&lt;&#x2F;h2&gt;
+&lt;p&gt;I had the seed of an idea: A computer that communicated through a text terminal. I&#x27;d never seen anything like that. But what of the story, and of the world? I had never done something like this before, so I took stock of my experience, both good and bad:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;good&quot;&gt;Good&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I&#x27;m a music producersidenote &#x27;namtao&#x27; &amp;quot;&lt;a href=&quot;http:&#x2F;&#x2F;oat.sh&#x2F;namtao-spotify&quot;&gt;http:&#x2F;&#x2F;oat.sh&#x2F;namtao-spotify&lt;&#x2F;a&gt;&amp;quot; %}, writing music and, probably, sound effects would be possible&lt;&#x2F;li&gt;
+&lt;li&gt;I love public-speaking, so I could voice whatever I write, and&lt;&#x2F;li&gt;
+&lt;li&gt;The scrolling terminal video method was ready to go&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;bad&quot;&gt;Bad&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I have no video production experience &lt;&#x2F;li&gt;
+&lt;li&gt;Nor much story writing experience&lt;&#x2F;li&gt;
+&lt;li&gt;And I&#x27;m not a very emotional person - could I even write impactful stories?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;So I put these constraints together to build the setting of a single-person-narrator, who speaks to us through a computer. The character would use text-to-speech, so we can&#x27;t hear his environment, so he would be an A.I. - that would release me from recording sound effects as a typical radio show would include.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, and I must get a little personal here, I realised that my non-neuraltypical condition, autism, could be turned into an asset, not a liability. Though I feel very under-qualified to talk about emotions and mental-health issues, I do feel uniquely qualified to write about a computer who is slowly understanding human emotion. You gotta work with what you&#x27;ve got!&lt;&#x2F;p&gt;
+&lt;p&gt;I started with these constraints and wrote and recordedsidenote &#x27;badmic&#x27; &amp;quot;With a TERRIBLE microphone!&amp;quot; %} a 5-minute pilot episode of a little satellite talking to us from orbit, shopped it around to my friends, then re-wrote it and published, with my partner Lucy recording some credits promising that &amp;quot;Lost Terminal will return next week&amp;quot;. There was no going back now!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;part-2-what-i-have-learned-along-the-way&quot;&gt;Part 2: What I have Learned Along The Way&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;production-advice&quot;&gt;Production Advice&lt;&#x2F;h2&gt;
+&lt;p&gt;A summary of my advice in the next few sections is simply to write for yourself. Write the stories you, or perhaps your younger self, want or wanted to hear. It&#x27;s much easier to know what will be well-received if you are both audience and author.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;genre-and-setting&quot;&gt;Genre and setting&lt;&#x2F;h2&gt;
+&lt;p&gt;First, you must choose a genre, which is often closely linked to the setting. This can be anything from sci-fi to satire or horror. This is the canvas you will frame your story on. In many ways, both the genre and setting are unrelated to the story and themes you want to explore. Star Wars could be rewritten in Renaissance Venice and it would have just the same message of hope and rebellion.sidenote &#x27;sw&#x27; &amp;quot;And, as a bonus, it would still have cool swords!&amp;quot; %}
+Choose a genre you are familiar with; choose one you like.&lt;&#x2F;p&gt;
+&lt;p&gt;As well as the setting, also consider the way you present the story in terms of narration. There are many options for you to consider:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Present tense or past tense?&lt;&#x2F;li&gt;
+&lt;li&gt;Will you have a single-person narrator, or a full cast of voice actors?&lt;&#x2F;li&gt;
+&lt;li&gt;How about bespoke background music?&lt;&#x2F;li&gt;
+&lt;li&gt;what of sound effects?&lt;&#x2F;li&gt;
+&lt;li&gt;etc.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We must all work to our constraints. If you&#x27;ve got enthusiastic and talented friends, you&#x27;ve got a ready-made cast! Recording will be more complicated, but you will manage. However if it&#x27;s just you with a microphone in your bedroom, that&#x27;s also fine.&lt;&#x2F;p&gt;
+&lt;p&gt;My recommendation is to understand your constraints and let them shape the setting. Some of the best and most influential stories are told by a single person whispering in to a microphone - and you can always add more people later! The most important thing is to START.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;themes-and-topics&quot;&gt;Themes and topics&lt;&#x2F;h2&gt;
+&lt;p&gt;This is what your story is REALLY about. Not the location, not the framing, not even the story and characterssidenote &#x27;character&#x27; &amp;quot;Though you could write a character-heavy exploration story, I suppose? Not my cup of tea&amp;quot; %}.
+The BIG THEMES your characters explore within the framing of the world are what you will be writing about mostly: Environmentalism, class struggle, slavery, mental health, the meaning of art, the meaning of LIFE. The topics are the reason you want to write. The topics are the reason you NEED to write.&lt;&#x2F;p&gt;
+&lt;p&gt;The topic and themes should get you out of bed in the morning. They should make you proud of what you write, make you hunger to learn more about it, so you can better distil that information down into your work; and here&#x27;s the most important thing: To leave people richer and better for experiencing your story.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s OK to start with a simple story concept or a character concept that you think is fun, but that won&#x27;t keep you going. As you&#x27;re writing your first draft or pilot episode, look for the themes and topics that are creeping in to your work. Your brain won&#x27;t let you write about anything else. Seize them.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;story&quot;&gt;Story&lt;&#x2F;h2&gt;
+&lt;p&gt;You may know how to write a story, you may not. When I started writing &lt;a href=&quot;http:&#x2F;&#x2F;www.lostterminal.com&quot;&gt;Lost Terminal&lt;&#x2F;a&gt; I certainly didn&#x27;t. But I have good news for you, if you believe Kurt Vonnegutsidenote &#x27;kv&#x27; &amp;quot;In his lecture &lt;em&gt;On The Shapes Of Stories&lt;&#x2F;em&gt; &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=oP3c1h8v2ZQ&quot;&gt;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=oP3c1h8v2ZQ&lt;&#x2F;a&gt;&amp;quot; %} there are only 6 stories in the world.&lt;&#x2F;p&gt;
+&lt;p&gt;They are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Rags to riches&lt;&#x2F;strong&gt; (a story that follows a rise in happiness)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Tragedy&lt;&#x2F;strong&gt;, or &lt;strong&gt;riches to rags&lt;&#x2F;strong&gt; (one that follows a fall in happiness)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Man in a hole&lt;&#x2F;strong&gt; (fall–rise)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Icarus&lt;&#x2F;strong&gt; (rise–fall)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Cinderella&lt;&#x2F;strong&gt; (rise–fall–rise), and,&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Oedipus&lt;&#x2F;strong&gt; (fall–rise–fall). &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Write one of these if you are having trouble coming up with your ownsidenote &#x27;guardian&#x27; &amp;quot;The Guardian has more on the subject at &lt;a href=&quot;https:&#x2F;&#x2F;www.theguardian.com&#x2F;books&#x2F;booksblog&#x2F;2016&#x2F;jul&#x2F;13&#x2F;three-six-or-36-how-many-basic-plots-are-there-in-all-stories-ever-written&quot;&gt;https:&#x2F;&#x2F;www.theguardian.com&#x2F;books&#x2F;booksblog&#x2F;2016&#x2F;jul&#x2F;13&#x2F;three-six-or-36-how-many-basic-plots-are-there-in-all-stories-ever-written&lt;&#x2F;a&gt;&amp;quot; %} - it doesn&#x27;t matter. As I said before, the real impact isn&#x27;t the plot arc, it&#x27;s the themes of your podcast. Sure, it&#x27;s fun to have a cute satellite protagonist, but the deep themes will be what people come back for again and again. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;writing&quot;&gt;Writing&lt;&#x2F;h1&gt;
+&lt;p&gt;How to write, according to Neil Gaiman, is that &amp;quot;You sit down at the keyboard and you put one word after another until its done. It&#x27;s that easy, and that hard.&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Writing to the regular schedule required by a serialised podcast can take two forms:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write it all beforehand and record to your schedule.&lt;&#x2F;li&gt;
+&lt;li&gt;Write it just in time to your recording schedule.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Though the former is more relaxing and safer, I&#x27;m going to argue you do the latter.&lt;&#x2F;p&gt;
+&lt;p&gt;Like many of us, I struggle with getting things done. When there are no deadlines other than those I create, it seems like I can finish my projects whenever, which of course actually means &#x27;never&#x27;. There are tools and projects that helped me in the past, the only novel I&#x27;ve ever finished was because I committed, very loudly and publicly, to &lt;a href=&quot;https:&#x2F;&#x2F;nanowrimo.org&quot;&gt;NaNoWriMo&lt;&#x2F;a&gt;, and smashed 1600 words into my laptop every day for a month. Though I&#x27;m very proud of what I wrote, I don&#x27;t think the pace is sustainable for a podcast, and I certainly didn&#x27;t have fun.
+I recommend a much more sedentary 500 words per day. This allows you, if you like, to have a 20-minute podcast completed in one week.
+My schedule, for your interest, is simply:&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;DAY&lt;&#x2F;th&gt;&lt;th&gt;TASKS&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday-Friday&lt;&#x2F;td&gt;&lt;td&gt;edit this week&#x27;s episode, and write next week&#x27;s episode.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Saturday&lt;&#x2F;td&gt;&lt;td&gt;Record this week&#x27;s episode&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Sunday&lt;&#x2F;td&gt;&lt;td&gt;Edit audio and music.&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Monday&lt;&#x2F;td&gt;&lt;td&gt;Publish episode&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Tuesday&lt;&#x2F;td&gt;&lt;td&gt;Do it all again&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;br&#x2F;&gt;
+&lt;p&gt;I get up early and do this before my day job. It only takes an hour, and means that I give my best, most focused time to my project. Some of you will be night owls and can do this at night, others have busy lives and can only spare a lunch break - choose a schedule that works for you.&lt;&#x2F;p&gt;
+&lt;p&gt;You can bunch those up and record a whole season of them, or as I&#x27;ve said, you could release them straight away. Why would we subject ourselves to this hectic schedule? Motivation and feedback.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;&#x2F;h3&gt;
+&lt;p&gt;Motivation for me relates to the thrill of FINISHING something. &lt;em&gt;&amp;quot;But what if I&#x27;m not finished editing&amp;quot;&lt;&#x2F;em&gt; I hear you cry. I have good news: The work is never finished. As Bill Condon says, simply, &lt;em&gt;&amp;quot;No piece of writing is ever finished. It&#x27;s just due.&amp;quot;&lt;&#x2F;em&gt;.
+So, you get it as good as you can do, and then you record. The act of recording, of speaking the script out loud, is a huge advantage that book authors do not always have. It&#x27;s a great check, in my experience, and errors are corrected either consciously or unconsciously, while speaking.&lt;&#x2F;p&gt;
+&lt;p&gt;marginfigure &#x27;Seth&#x27; &amp;quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;5PDPWwZ.png&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;feedback&quot;&gt;Feedback&lt;&#x2F;h3&gt;
+&lt;p&gt;Feedback is VERY USEFUL, espicially when you&#x27;re starting out. If you keep your script to yourself, you&#x27;ll never improve. If you get an editor, you&#x27;ll have two heads to improve it. But releasing it to the world for comment will get you 1,000x that.
+You also might find aspects of the story people pick up on that you didn&#x27;t even notice. Maybe they love the background character you put in for just one paragraph - Time to give that person their own arc!&lt;&#x2F;p&gt;
+&lt;p&gt;And, of course, positive feedback and praise is very motivating.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;planning&quot;&gt;Planning&lt;&#x2F;h2&gt;
+&lt;p&gt;If you, as I recommend, record and publish early episodes before later episodes have been written, you may worry about how to guarantee continuity.
+While I made some small mistakes in my pilot episodesidenote &#x27;pilot&#x27; &amp;quot;See if you can spot them: &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=p3bDE9kszMc&quot;&gt;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=p3bDE9kszMc&lt;&#x2F;a&gt;&amp;quot; %}, both factual and plot-related, no-one cares. Not ONE person has pointed out the errors. They have, I imagine, forgotten them under the weight of subsequent episodes. This happens all the time, to professionals in every industry, from TV shows to movie series.
+You can even, and this is another advantage of retaining ownership of your mp3s, CORRECT THINGS AFTER PUBLICATION! I&#x27;ve only had to do this once, where I somehow duplicated a sentence and didn&#x27;t pick it up in editing. It&#x27;s such a relief to be working in a forgiving medium.&lt;&#x2F;p&gt;
+&lt;p&gt;Allow yourself leniency in the pilot for small errors. You have to, otherwise you&#x27;d never get the damn thing out the door! &lt;&#x2F;p&gt;
+&lt;p&gt;But, for the rest of your story, you must plan.&lt;&#x2F;p&gt;
+&lt;p&gt;A good friend of mine, Neil Murtonsidenote &#x27;mt&#x27; &amp;quot;Do buy his wonderful book of 100-word stories here  &lt;a href=&quot;https:&#x2F;&#x2F;www.amazon.co.uk&#x2F;Magpie-Tales-Mr-Neil-Murton&#x2F;dp&#x2F;1500287849&quot;&gt;https:&#x2F;&#x2F;www.amazon.co.uk&#x2F;Magpie-Tales-Mr-Neil-Murton&#x2F;dp&#x2F;1500287849&lt;&#x2F;a&gt;&amp;quot; %}, gave me some advice when I was starting out:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Knowing the destination is a big help when planning the trip.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;YOU. MUST. PLAN.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Once you&#x27;ve chosen your plot arc (or chosen one of the 6 plots) write it down in a table, and sketch out for yourself what happens for each of the plotlines in your series (there can be overlapping plots).
+My advice for this is to start at the end, the resolution, then the start, then the mid-point, then fill in the details.sidenote &#x27;dw&#x27; &amp;quot;Dan Wells has a great video on his take on story structure you should watch. &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=KcmiqQ9NpPE&quot;&gt;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=KcmiqQ9NpPE&lt;&#x2F;a&gt;&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;That&#x27;s it! Those are all my secrets!&lt;&#x2F;p&gt;
+&lt;p&gt;🛰️❤️🌍&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+# Appendix: Tools
+Here&#x27;s a dump of the tools and services I&#x27;ve used (chosen for PRICE mostly, but they also work well)
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;Spreaker.com&quot;&gt;http:&#x2F;&#x2F;Spreaker.com&lt;&#x2F;a&gt; - podcast publishing.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Swordfish90&#x2F;cool-retro-term&quot;&gt;Cool Retro Term&lt;&#x2F;a&gt; - this is a fun old-fashioned CRT-themed command line for mac and linux. Saved me doing any complex video FX for the videos.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;obsproject.com&#x2F;&quot;&gt;OBS&lt;&#x2F;a&gt; - Open Broadcaster Software, fantastic screen and camera recording&#x2F;streaming software, which I use for capturing the terminal&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.lwks.com&#x2F;&quot;&gt;Lightworks&lt;&#x2F;a&gt; - very inexpensive video editing software, I chose this because it&#x27;s professional software that supports Linux. I&#x27;m ALWAYS happy to support companies that make great software for linux! Works on mac and windows too, of course.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bitwig.com&quot;&gt;Bitwig&lt;&#x2F;a&gt; - my digital audio workstation, all my music is produced using this. If you know about Ableton, it&#x27;s an Ableton clone, half the price, and works on Linux.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.rode.com&#x2F;microphones&#x2F;procaster&quot;&gt;RØDE Procaster&lt;&#x2F;a&gt; - microphone. Every podcaster needs a nice mic to whisper into! And this one is a modern, good-value broadcast-quality mic.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You should also check out the podcast &lt;a href=&quot;https:&#x2F;&#x2F;www.nightvalepresents.com&#x2F;startwiththis&quot;&gt;Start With This&lt;&#x2F;a&gt;, from the creators of Welcome To Night Vale, both which were a HUGE inspiration.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Sleep: One Month On</title>
+        <published>2020-05-10T00:00:00+00:00</published>
+        <updated>2020-05-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/polyphase-one-month/"/>
+        <id>https://0atman.com/articles/polyphase-one-month/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/polyphase-one-month/">&lt;p&gt;It&#x27;s been a month since I started waking up at 3ammarginfigure &amp;quot;everyman&amp;quot; &amp;quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;xVVXNAf.png&amp;quot; &amp;quot;My Everyman 2 Schedule.&amp;quot; %} and taking two naps during the day, as detailed in &lt;a href=&quot;&#x2F;articles&#x2F;20&#x2F;sleep-experiment&quot;&gt;my previous post&lt;&#x2F;a&gt; in this series.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m still keeping up my practice. I&#x27;m still overjoyed at the extra day&#x27;s-worth of free time it gives me, early in the morning, when there is nothing pressing to do. This time is truly my own.&lt;&#x2F;p&gt;
+&lt;p&gt;Though I have moments of tiredness now and then, they&#x27;re diminishing every day, and it was a very small price to pay for getting 5 hours of productive time in the morning before I have to start work. For example, last Thursday, I arranged a cover of &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=W1meeqQRR28&quot;&gt;Tangerine Dream&#x27;s &lt;em&gt;Love On A Real Train&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;, and published it to YouTube the next day, all work done before sunrise:
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube-nocookie.com&#x2F;embed&#x2F;W1meeqQRR28&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;h1 id=&quot;timeline&quot;&gt;Timeline&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;10-04-20&quot;&gt;10&#x2F;04&#x2F;20&lt;&#x2F;h2&gt;
+&lt;p&gt;I woke up at 3:00 and hit Everyman 2 cold turkey. I didn&#x27;t prepare in advance, other than setting a silent alarm on my watch. My routine is to get up, shower, and sit in front of my computer. During this first weekend, I knew I&#x27;d need to have strategies to keep myself awake, so I mostly played video gamessidenote &#x27;fo76&#x27; &amp;quot;Fallout 76, mostly.&amp;quot; %} during this time. I think this worked well, as it didn&#x27;t require much brainpower (which I was lacking in the first weekend), but kept me awake through the adaptation period.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;14-04-20&quot;&gt;14&#x2F;04&#x2F;20&lt;&#x2F;h2&gt;
+&lt;p&gt;First day at work after the long weekend&#x27;s adaptation. I had no problem getting back to it. My tiredness was now much reduced, and I was in no danger of falling asleep while working! (I have never fallen asleep during times I&#x27;d not scheduled a nap, though I occasionally nap for an extra 10 minutes).&lt;&#x2F;p&gt;
+&lt;p&gt;My first nap at 7:00 and second at 13:00 fits well into my work schedule. The first doesn&#x27;t affect my 8am start time, and the second I take during my lunchbreak.&lt;&#x2F;p&gt;
+&lt;p&gt;Everyman 2 is flexible enough that I&#x27;ve moved my afternoon nap +&#x2F;- 1h without much difficulty. I do note that I feel a little tiredness the next day if I move it a lot.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;20-04-20&quot;&gt;20&#x2F;04&#x2F;20&lt;&#x2F;h2&gt;
+&lt;p&gt;2 weeks in, I feel 90%sidenote &#x27;ish&#x27; &amp;quot;Or thereabouts.&amp;quot; %} adapted, and have survived missing a nap, poor sleep quality due to sickness, and the constant clamour of people telling me that this is a bad idea. Nothing can persuade me to go back now, but I&#x27;m confident that if I need to break routine (say, for a holiday), I can easily pick it up again.
+marginfigure &#x27;asym&#x27; &amp;quot;https:&#x2F;&#x2F;upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;43&#x2F;Hyperbola_one_over_x.svg&#x2F;1024px-Hyperbola_one_over_x.svg.png&amp;quot; &amp;quot;It seems to take a long time to get back to 100%&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;10-05-20&quot;&gt;10&#x2F;05&#x2F;20&lt;&#x2F;h2&gt;
+&lt;p&gt;That brings us to today. I feel 95% adapted, and slowly, day by day, asymptotically approaching 100%. &lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;h1 id=&quot;a-typical-day&quot;&gt;A Typical Day&lt;&#x2F;h1&gt;
+&lt;br&#x2F;&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Time&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: right&quot;&gt;Activity&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;3:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Wake up &amp;amp; shower&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;3:30&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Tea &amp;amp; music projects&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;5:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Teabreak &amp;amp; chores&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;6:30-6:50&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;E2 Nap 1&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;7:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Breakfast (weekday)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;8:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Start work (weekday)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;13:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;E2 Nap 2&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;13:20&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Lunch &amp;amp; workout&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;14:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Back to work (weekday)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;18:30&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Dinner&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;21:30&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Wind down, maybe read in bed&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;22:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;E2 Core Sleep&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;03:00&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Do it all again!&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;br&#x2F;&gt;
+&lt;h1 id=&quot;life-changes&quot;&gt;Life Changes&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;insomnia&quot;&gt;Insomnia&lt;&#x2F;h2&gt;
+&lt;p&gt;As I mentioned in my &lt;a href=&quot;&#x2F;articles&#x2F;20&#x2F;sleep-experiment&quot;&gt;previous post&lt;&#x2F;a&gt;, I used to have insomnia. I&#x27;d be in bed before 23:00, but not asleep before 1:00. As I hoped, the upheaval of Everyman 2 has cured me of this. I&#x27;m really good at sleeping now!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bedtime-strictness&quot;&gt;Bedtime Strictness&lt;&#x2F;h2&gt;
+&lt;p&gt;The other side of the &lt;em&gt;being-cured-of-insomnia&lt;&#x2F;em&gt; coin is that I&#x27;m VERY tired at the end of the day: After 21:30 I&#x27;m falling asleep, and am ready to drop at 22:00.&lt;&#x2F;p&gt;
+&lt;p&gt;While I understand this is quite normal for early-birds, it&#x27;s a novel experience for me!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;social-life-impact&quot;&gt;Social Life Impact&lt;&#x2F;h2&gt;
+&lt;p&gt;My tiredness at the end of the day means that I&#x27;m keen to wind up social gatherings before 22:00. Though this isn&#x27;t much different to how I was before, I&#x27;m now completely disciplined about logging off at 22:00.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;partner-impact&quot;&gt;Partner Impact?&lt;&#x2F;h2&gt;
+&lt;p&gt;Lucy&#x27;s been very accommodating to my new schedule. I built my timetable to suit her, to minimise disruption. This is easy, as she sleeps soundly, I often don&#x27;t wake her when getting up at 3:00.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;health-changes&quot;&gt;Health Changes&lt;&#x2F;h2&gt;
+&lt;p&gt;As with many Polyphasic experiments, I&#x27;ve found that my caffeine and calorie consumption has gone up dramatically. These two tools are very useful for waking yourself up in the adaptation period. I am now making a conscious effort to cut both down to the previous norms, as would be more healthy. I&#x27;ve gained about 3KG, and it&#x27;ll be difficult to lose that. However, assuming I can get that under control, it&#x27;ll have been a worthwhile step.&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;h1 id=&quot;advice-for-the-curious&quot;&gt;Advice For The Curious&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;well-meaning-friends-family&quot;&gt;Well-Meaning Friends &amp;amp; Family&lt;&#x2F;h2&gt;
+&lt;p&gt;Many things have surprised me during this experiment. The biggest one has been that about half the people I talk to ABSOLUTELY HATE it:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;I don&#x27;t think it is a good idea. In fact, it might be construed as heuristic to the point of being selfish&amp;quot;sidenote &#x27;dad&#x27; &amp;quot;Oatpa&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;This is a very typical attitude. Sleep is a topic similar to diet and exercise - everyone has an opinion because we&#x27;re all familiar with the subject matter.&lt;&#x2F;p&gt;
+&lt;p&gt;My advice is to experiment quietly, telling only those around you that you need to nap during the day. You&#x27;ll either succeed or fail, and both will be a valuable learning experience. You can then confidently &lt;em&gt;come out&lt;&#x2F;em&gt; in a big way!sidenote &#x27;comeout&#x27; &amp;quot;By writing the longest blog post of your life, for instance.&amp;quot; %} I&#x27;m reminded of one of the rules of the Cult Of Donesidenote &#x27;cod&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;@bre&#x2F;the-cult-of-done-manifesto-724ca1c2ff13&quot;&gt;https:&#x2F;&#x2F;medium.com&#x2F;@bre&#x2F;the-cult-of-done-manifesto-724ca1c2ff13&lt;&#x2F;a&gt;&amp;quot; %} that states:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Those without dirty hands are wrong.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;h2 id=&quot;things-that-helped-me-during-adaptation&quot;&gt;Things That Helped Me During Adaptation&lt;&#x2F;h2&gt;
+&lt;p&gt;Pick your schedule (Everymansidenote &#x27;everypoly&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;polyphasic.net&#x2F;schedules&#x2F;everyman&#x2F;&quot;&gt;polyphasic.net&#x2F;schedules&#x2F;everyman&#x2F;&lt;&#x2F;a&gt;&amp;quot; %} works well, with 3 different options to suit your schedule).&lt;&#x2F;p&gt;
+&lt;p&gt;Listening to brown noise while napping, if you are a light sleepersidenote &#x27;brown&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Q6MemVxEquE&amp;amp;t=31825s&quot;&gt;This one&lt;&#x2F;a&gt; is my favourite. Mmm, brown flavour.&amp;quot; %}.&lt;&#x2F;p&gt;
+&lt;p&gt;Start on a weekend you can isolate yourself from obligations.&lt;&#x2F;p&gt;
+&lt;p&gt;Programme some low-effort distractions for the first few days, and don&#x27;t worry that you&#x27;re not productive; that&#x27;ll come.&lt;&#x2F;p&gt;
+&lt;p&gt;Don&#x27;t eat breakfast at night. I found after a week of NEEDING to eat to stay awake, I preferred to wait until after my first nap to have breakfast. My digestion seemed slow and uncomfortable at nightsidenote &#x27;circadian&#x27; &amp;quot;Something something circadian rhythm.&amp;quot; %}.&lt;&#x2F;p&gt;
+&lt;p&gt;I found that having meals after each nap (breakfast and lunch, respectively), washing my face, and having a drink of water, really helped me bounce back into wakefulness. &lt;&#x2F;p&gt;
+&lt;p&gt;If you are able to get blackout curtains or blinds for your bedroom, that&#x27;s a great way of helping you nap.&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h1&gt;
+&lt;p&gt;If you would like to talk about it, get advice, or tell me I&#x27;m wrong, hit me up on Twitter, I&#x27;m &lt;a href=&quot;http:&#x2F;&#x2F;twitter.com&#x2F;0atman&quot;&gt;@0atman&lt;&#x2F;a&gt;. If you want community advice, drop a line to the &lt;a href=&quot;http:&#x2F;&#x2F;reddit.com&#x2F;r&#x2F;polyphasic&quot;&gt;r&#x2F;polyphasic&lt;&#x2F;a&gt; community, they&#x27;re friendly, helpful people!&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;h1 id=&quot;further-reading&quot;&gt;Further Reading&lt;&#x2F;h1&gt;
+&lt;p&gt;It&#x27;s all at &lt;a href=&quot;http:&#x2F;&#x2F;polyphasic.net&quot;&gt;http:&#x2F;&#x2F;polyphasic.net&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Iterate-and-Mutate Antipattern</title>
+        <published>2020-04-26T00:00:00+00:00</published>
+        <updated>2020-04-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/iterate-and-mutate/"/>
+        <id>https://0atman.com/articles/iterate-and-mutate/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/iterate-and-mutate/">&lt;p&gt;Names are powerful things. To name something is to control it. For years, I&#x27;ve been cautioning friends and colleagues about the following, which I consider a code smell:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;enabled_users &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;[]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;marginnote &#x27;filter&#x27; &amp;quot;This code can be dramatically improved with many functional methods, in this case, a simple filter:&lt;br&#x2F;&gt; &lt;code&gt;filter(users, is_user_enabled)&lt;&#x2F;code&gt; &amp;quot; %}&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;user &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;users:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;user&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;enabled:
+&lt;&#x2F;span&gt;&lt;span&gt;        enabled_users&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt;(user)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The part that makes me narrow my eyes, and the way you can identify this, is setting a variable to a null-y value, then opening up a for loop. I&#x27;ll go into why I consider this bad practice in this article.&lt;&#x2F;p&gt;
+&lt;p&gt;Until 3 days ago, I had no name for this pattern. Since Robb Shecter&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;dogsnog.blog&#x2F;2020&#x2F;04&#x2F;23&#x2F;the-iterate-and-mutate-programming-anti-pattern&#x2F;&quot;&gt;post&lt;&#x2F;a&gt;, I have one: &lt;em&gt;Iterate-and-mutate&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;every-language-is-c-and-other-lies&quot;&gt;Every language is C (and other lies)&lt;&#x2F;h2&gt;
+&lt;p&gt;Programming languages aren&#x27;t just ways to communicate instructions to machines, the are frameworks for thought.sidenote &#x27;sapier&#x27; &amp;quot;In natural languages, this is called the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Linguistic_relativity&quot;&gt;Sapir–Whorf hypothesis&lt;&#x2F;a&gt;&amp;quot; %} Every language (nearly) supports &lt;code&gt;if&lt;&#x2F;code&gt; statements and &lt;code&gt;for&lt;&#x2F;code&gt; loops, so it is easy to solve your programming problems with these constructs. However, it&#x27;s NOT easy to read this code after it has been written.&lt;&#x2F;p&gt;
+&lt;p&gt;We&#x27;ve all seen nested &lt;code&gt;if&lt;&#x2F;code&gt;s and &lt;code&gt;for&lt;&#x2F;code&gt;smarginfigure &#x27;nested&#x27; &amp;quot;https:&#x2F;&#x2F;imgur.com&#x2F;AMZYrnM.png&amp;quot; &amp;quot;You get the idea&amp;quot; %}, it&#x27;s a famous way of writing spaghetti code. To understand the result of the &lt;code&gt;for&lt;&#x2F;code&gt; loop, the whole body must be inspected. Whoever looks at your code next must read many lines of code before they understand what is happening, because it can execute arbitrary, mutating, side-effecting code.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;think-about-it&quot;&gt;Think about it&lt;&#x2F;h2&gt;
+&lt;p&gt;If you were to analyse the flow and swap out &lt;code&gt;if&lt;&#x2F;code&gt;s and &lt;code&gt;for&lt;&#x2F;code&gt;s with higher-level alternatives, they will more readable. Let&#x27;s look at my toy example above: Switching the filtering &lt;code&gt;for&lt;&#x2F;code&gt; loop with the &lt;code&gt;filter&lt;&#x2F;code&gt; function, allows the reader a hint to what KIND of iteration we are doing.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;enabled_users &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8be9fd;&quot;&gt;filter&lt;&#x2F;span&gt;&lt;span&gt;(users, is_user_enabled)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Immediately they can reason more about the code, they know that:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;the new collection will have up to N itemssidenote &#x27;nitems&#x27; &amp;quot;Where N is the size of the original collection, &lt;code&gt;users&lt;&#x2F;code&gt; in my example&amp;quot; %}&lt;&#x2F;li&gt;
+&lt;li&gt;it will be a subset of the original collection&lt;&#x2F;li&gt;
+&lt;li&gt;with some elements filtered out by some test codesidenote &#x27;filterfn&#x27; &amp;quot;The well-named function &lt;code&gt;is_user_enabled&lt;&#x2F;code&gt;&amp;quot; %}&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If we&#x27;d used a &lt;code&gt;for&lt;&#x2F;code&gt; loop, the reader would know that it&#x27;s a &lt;code&gt;for&lt;&#x2F;code&gt; loop. Thanks, I hate it.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion-and-invocation&quot;&gt;Conclusion and Invocation&lt;&#x2F;h2&gt;
+&lt;p&gt;Once you are aware of the iterate-and-mutate pattern, you&#x27;ll be able to think more critically at what kind of problems you&#x27;re solving. Nearly all problems we face as programmers are iteration problems. &lt;code&gt;for&lt;&#x2F;code&gt;s don&#x27;t help us much, we need to subcategorise. You&#x27;ll start using not just functional methods more,sidenote &#x27;fnmethods&#x27; &amp;quot;Such as &lt;code&gt;map&lt;&#x2F;code&gt;, &lt;code&gt;filter&lt;&#x2F;code&gt;, and list comprehensions&amp;quot; %} but the other high-level features of your language: Higher-order functions, closures, recursion, fluent interfaces, dependent types - OH MY!&lt;&#x2F;p&gt;
+&lt;p&gt;In short, you might start enjoying again the great features that made you learn your language in the first place.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My Polyphasic Sleep Experiment</title>
+        <published>2020-04-21T00:00:00+00:00</published>
+        <updated>2020-04-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/sleep-experiment/"/>
+        <id>https://0atman.com/articles/sleep-experiment/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/sleep-experiment/">&lt;p&gt;marginfigure &#x27;snorlax&#x27; &amp;quot;https:&#x2F;&#x2F;cdn.bulbagarden.net&#x2F;upload&#x2F;f&#x2F;fb&#x2F;143Snorlax.png&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;It is 3:30am as I write this, I have just woken up from my core sleep of 4h 30mins, and I feel fantastic. It will be 5 hours before I need to start work at my day job, and I feel like I have unlocked an extra day&#x27;s worth of productive free time, accessed through my practice of Polyphasic sleep. But how did I get here?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;early-experiments&quot;&gt;Early Experiments&lt;&#x2F;h2&gt;
+&lt;p&gt;In 2007 I learned about Polyphasic sleep, which is the largely-untested hypothesis that if you sleep more often during a 24-hour cycle, you need less overall sleep than if you just slept once. We observe that cultures who have a midday sleepsidenote &#x27;biphasic&#x27; &amp;quot;Such as the Spanish siesta. This is called &lt;em&gt;biphasic&lt;&#x2F;em&gt;, two phases of sleep, one at night, one during the day.&amp;quot; %} tend to require less overall sleep than cultures with one block of nighttime sleep.sidenote &#x27;monophasic&#x27; &amp;quot;&lt;em&gt;Monophasic&lt;&#x2F;em&gt; sleep.&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;The cited examples in support of the polyphasic hypothesis include cross-Atlantic sailors sleeping in short bursts, military personnel on watch, parents of newborn babies, and Buckminster Fuller&#x27;s famous &lt;em&gt;&amp;quot;twenty-two thinking hours a day&amp;quot;&lt;&#x2F;em&gt;.sidenote &#x27;dymaxion&#x27; &amp;quot;The Dymaxion schedule: 30 minutes nap every 6 hours.&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;The method I tried in 2007 is the &lt;em&gt;Uberman&lt;&#x2F;em&gt; schedule. This method is simple: Take a 20-minute nap every 4 hours. No other sleep. 
+marginfigure &amp;quot;uberman&amp;quot; &amp;quot;http:&#x2F;&#x2F;thumb.napchart.com:1771&#x2F;api&#x2F;getImage?width=600&amp;amp;height=600&amp;amp;chartid=gd3dk&amp;quot; &amp;quot;The Uberman Schedule.&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;This is the most talked-about schedule in Polyphasic circles because of the tantalising potential to achieve Fuller-levels of waking time. In Uberman, you take a 20-minute nap at 12, 4 and 8 - both AM and PM. This (and Dymaxion) is the most extreme polyphasic sleep schedule, and the one that requires the least actual sleep - 2 hours in every 24!&lt;&#x2F;p&gt;
+&lt;p&gt;Where does this 2 hours come from? It comes from the observation that we only have about two hours of REM, of dreaming, in every night of sleep. The polyphasers hypothesise that it’s only the REM phase that is useful for the brainsidenote &#x27;trickuberman&#x27; &amp;quot;The trick with Uberman is to get the brain to drop into REM, to dream, for the whole of the 20 minute nap. That is a hell of a trick.&amp;quot; %}, the rest of the time is spent in deep sleep. Deep sleep is restful for the body, but no more so than waking forms of rest.&lt;&#x2F;p&gt;
+&lt;p&gt;Back to Uberman: My brother and I tried it for a week, it was MISERABLE and I crashed out HARD.sidenote &#x27;lewis2&#x27; &amp;quot;He stuck with it for about another week.&amp;quot; %} The problem with Uberman is its brutal adaptation period: You basically don&#x27;t nap the first few days, because you&#x27;re not used to sleeping during the day, and this means you&#x27;re immediately sleep deprived. It takes two weeks for your brain to start squeezing in REM into your naps, to avoid permanent damage.sidenote &#x27;records&#x27; &amp;quot;Record-breaking sleepers seldom can stay awake for &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Sleep_deprivation&quot;&gt;longer than a week&lt;&#x2F;a&gt;.&amp;quot; %} The second problem, which also caused Buckminster Fuller to fall back to monophasic sleeping, is how society is rigidly built around sleeping at nighttime.sidenote &#x27;other-men&#x27; &amp;quot;In Fuller&#x27;s words, &lt;em&gt;&amp;quot;[my] business associates [...] insisted on sleeping like other men&amp;quot;.&amp;quot;&lt;&#x2F;em&gt; %}
+Thus disillusioned with Polyphasic sleep, I forgot about it for a decade.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-history-with-sleep&quot;&gt;My History With Sleep&lt;&#x2F;h2&gt;
+&lt;p&gt;I&#x27;ve had fairly standard sleep experience in life: Though a 3am bedtime was perfectly normal at university, that&#x27;s unthinkable now that I&#x27;ve had a decade of 7am alarms for work. I have always needed lots of sleep: My friends joke that once the clock gets past 11pm, I&#x27;m at risk of turning into a pumpkin.sidenote &#x27;Cinderella&#x27; &amp;quot;You know, like Cinderella&#x27;s carriage.&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;d always been a light sleeper, but in 2017 I developed mild insomnia, adding the inability to fall asleep to my already-impressive inability to &lt;strong&gt;stay&lt;&#x2F;strong&gt; asleep. Ugh! Despite being in bed before 11pm, I&#x27;d only fall asleep between 1-2am. This then put pressure on my wake-up time in the morning, making me groggy, late for work, and feeling like I was wasting the day.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;covid-19&quot;&gt;Covid-19&lt;&#x2F;h2&gt;
+&lt;p&gt;Many times during the past decade, I&#x27;ve thought about trying Polyphasic sleeping againsidenote &#x27;overhaul&#x27; &amp;quot;Especially as a way to overhaul my dysfunctional sleep schedule&amp;quot; %}, but my plans were always tempered by Fuller&#x27;s experience that you have to live in a society of offices, trains, evening get-togethers, and constant interruptions. &lt;&#x2F;p&gt;
+&lt;p&gt;Perhaps you can see where this is going. As I write this, I am 44 days into the Covid lockdown here in London. I&#x27;ve been very fortunate to be able to work from home, and because much of my socialising is digital anyway, things are going as well as can be hoped for.&lt;&#x2F;p&gt;
+&lt;p&gt;On the 10th of April, 2 weeks ago, we had a long weekend of two national holidayssidenote &#x27;holidays&#x27; &amp;quot;Good Friday and Easter Monday&amp;quot;. %} and I realised that the stars had aligned for a polyphasic experiment: Not only did I no longer live in a world of offices and the forced exodus of commuting, I had 4 days where I wasn&#x27;t even expected to be webcam-present at my work.&lt;&#x2F;p&gt;
+&lt;p&gt;That day, I had come across &lt;a href=&quot;http:&#x2F;&#x2F;polyphasic.net&quot;&gt;polyphasic.net&lt;&#x2F;a&gt;. I was going to try Uberman again, indeed that search led me to the site, but they categorise it as &lt;em&gt;&amp;quot;VERY HARD&amp;quot;&lt;&#x2F;em&gt; and &lt;em&gt;&amp;quot;NOT RECOMMENDED&amp;quot;&lt;&#x2F;em&gt; and go as far as saying that only people with a genetic predisposition can do it!marginfigure &amp;quot;everyman&amp;quot; &amp;quot;http:&#x2F;&#x2F;thumb.napchart.com:1771&#x2F;api&#x2F;getImage?width=600&amp;amp;height=600&amp;amp;chartid=9zmeq&amp;quot; &amp;quot;My Everyman 2 Schedule.&amp;quot; %}
+Also, they found 0% success rate, based on trawling reddit data. They couldn&#x27;t find a single account of someone sticking with it. They recommended a much more successful schedule: Everyman.&lt;&#x2F;p&gt;
+&lt;p&gt;Reading the excellent guide on the Everyman sleep schedule (at &lt;a href=&quot;https:&#x2F;&#x2F;polyphasic.net&#x2F;schedules&#x2F;everyman&#x2F;&quot;&gt;polyphasic.net&#x2F;schedules&#x2F;everyman&#x2F;&lt;&#x2F;a&gt;), I realised this was much more approachable. There are three variants of Everyman, E1, E2, E3. They are numbered based on how many naps you have during the day. They represent a gradient between efficiency and easy-of-adaptation. E1 is effectively a siesta schedule, and E3 requires only double Uberman&#x27;s sleep total. I resolved to try Everyman 2 (E2): &lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: left&quot;&gt;Schedule&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: right&quot;&gt;Total Sleep&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: right&quot;&gt;Core Sleep&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;Everyman 1&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;6h 20m&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;6h 0m&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;Everyman 2&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;5h 10m&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;4h 30m&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: left&quot;&gt;Everyman 3&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;4h 0m&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;3h 0m&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;br&#x2F;&gt;
+&lt;p&gt;After a late-night explanation to my partnersidenote &#x27;partner&#x27; &amp;quot;She has the patience of a saint.&amp;quot; %}, I set a silent alarm on my watch to 3am, and began the experiment!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;easter-adaptation&quot;&gt;Easter Adaptation&lt;&#x2F;h2&gt;
+&lt;p&gt;What a dream the adaptation has been! The first 24h of any polyphasic experiment are always best: Even if you can&#x27;t hack it, your sleep debt won&#x27;t catch up to you on the first day, and you&#x27;ll feel like you&#x27;re breaking out of a stupid societal default. It&#x27;s very profound to be pulling an all-nighter with the knowledge that this isn&#x27;t a one-off, and these are hours that will be permanently available to you, rather than being borrowed from the next day.&lt;&#x2F;p&gt;
+&lt;p&gt;Compared to my memory of the constant-sleepiness of Uberman, Everyman 2 was so much easier, even right at the start. I certainly felt tired, and during the first few days I had to keep busysidenote &#x27;fallout&#x27; &amp;quot;Luckily, a big update to Fallout 76 made that easy!&amp;quot; %} and be aware that to lie down was to risk sleeping (which would have ruined adaptation). But by the 4th day, back at work, I had basically transitioned. I was astonished how easy it was. I have been on a stable E2 schedule for 12 days today, and I will keep it up at least through the lockdown period.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;thumb.napchart.com:1771&#x2F;api&#x2F;getImage?width=600&amp;amp;height=600&amp;amp;chartid=9zmeq&quot; alt=&quot;Everyoat&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;further-reading&quot;&gt;Further Reading&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;polyphasic.net&#x2F;&quot;&gt;polyphasic.net&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>0atman&#x27;s WFH Advice</title>
+        <published>2020-04-09T00:00:00+00:00</published>
+        <updated>2020-04-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/wfh-advice/"/>
+        <id>https://0atman.com/articles/wfh-advice/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/wfh-advice/">&lt;p&gt;To achieve remote bliss, you need two things: Good software and good hardware.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;good-software&quot;&gt;Good Software&lt;&#x2F;h1&gt;
+&lt;p&gt;Tl;dr: Use &lt;a href=&quot;https:&#x2F;&#x2F;meet.jit.si&#x2F;&quot;&gt;Jitsi&lt;&#x2F;a&gt;, if you can, Google Meet is great too.&lt;&#x2F;p&gt;
+&lt;p&gt;A lot of people know about Zoomsidenote &#x27;zoom&#x27; &amp;quot;Especially those of us in the &lt;a href=&quot;https:&#x2F;&#x2F;www.theregister.co.uk&#x2F;2020&#x2F;04&#x2F;03&#x2F;dont_use_zoom_if_privacy&#x2F;&quot;&gt;security industry&lt;&#x2F;a&gt;&amp;quot; %}, but it&#x27;s not my first choice because it isn&#x27;t web-based. You have to download a client. It&#x27;s not a disaster, they release clients for Windows, OSX, Linux, Android, and IOS - but what about Chromebooks, Raspberry Pi, or weird or old platforms? Outta luck buddy.&lt;&#x2F;p&gt;
+&lt;p&gt;The web is the default interface, it&#x27;s crazy that in 2020 Zoom don&#x27;t have a native webapp. This could have been partially solved by an open-source client, but it&#x27;s closed.sidenote &#x27;class&#x27; &amp;quot;F-, see me after class.&amp;quot;%}&lt;&#x2F;p&gt;
+&lt;p&gt;Google Meet is good, as is Discord, GoToMeeting, etc. Anything web-based. But Jitsi is my recommendation, for the following reasons:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;1 Web-based (with mobile apps for convenience)&lt;&#x2F;li&gt;
+&lt;li&gt;2 Peer-to-peersidenote &#x27;p2p&#x27; &amp;quot;This is great for privacy, but also might be why it&#x27;s the most high-quality video I&#x27;ve seen: No middleware servers.&amp;quot; %}&lt;&#x2F;li&gt;
+&lt;li&gt;3 No registration required&lt;&#x2F;li&gt;
+&lt;li&gt;4 Open source, but backed by a commercial companysidenote &#x27;8x8&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.8x8.com&#x2F;&quot;&gt;8x8.com&lt;&#x2F;a&gt;&amp;quot; %} that provide a free server (&lt;a href=&quot;https:&#x2F;&#x2F;0atman.com&#x2F;articles&#x2F;wfh-advice&#x2F;meet.jit.si&quot;&gt;Jitsi Meet&lt;&#x2F;a&gt;) so you don&#x27;t have to set up your own&lt;&#x2F;li&gt;
+&lt;li&gt;5 Supports every feature I&#x27;ve heard of, except for Zoom&#x27;s break-out rooms.&lt;&#x2F;li&gt;
+&lt;li&gt;6 Even supports push-to-talk, a feature I&#x27;ve only seen on Discord before.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;So, if you have a choice, use &lt;a href=&quot;https:&#x2F;&#x2F;meet.jit.si&#x2F;&quot;&gt;Jitsi&lt;&#x2F;a&gt;, if not, Google Meet.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;good-hardware&quot;&gt;Good Hardware&lt;&#x2F;h1&gt;
+&lt;p&gt;Tl;dr: Just use some comfy headphones.&lt;&#x2F;p&gt;
+&lt;p&gt;I’m a music producersidenote &#x27;namtao&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;www.namtao.com&#x2F;&quot;&gt;namtao.com!&lt;&#x2F;a&gt;&amp;quot; %} and remote-working evangelist, so you KNOW I have OPINIONS! Here are the things everyone can do to improve their voicechat experience:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;1 Good Headphones&lt;&#x2F;li&gt;
+&lt;li&gt;2 Good microphone&lt;&#x2F;li&gt;
+&lt;li&gt;3 Good lighting&lt;&#x2F;li&gt;
+&lt;li&gt;4 Good webcam&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;good-headphones&quot;&gt;Good Headphones&lt;&#x2F;h2&gt;
+&lt;p&gt;Everyone must wear headphones. &lt;&#x2F;p&gt;
+&lt;p&gt;Headphones are 90% of the deal. If you only do one thing in this list - PLEASE DO THIS!
+It’s not even about what you hear - it’s about not using speakers. Speakers are the BANE of voice communications. The problem is that videoconferencing software is CLEVER. Too clever.&lt;&#x2F;p&gt;
+&lt;p&gt;Lets look at an example: This is Sam. Sam is not using headphones.sidenote &#x27;sam&#x27; &amp;quot;Classic Sam.&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;EZt6qV7.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;When another person on Sam’s call (the bubble in blue, perhaps) is speaking, their voice is picked up by Sam’s microphone. The clever software detects this and mutes sams’s mic, otherwise it would transmit back the speaker’s voice to them, like an echo.&lt;&#x2F;p&gt;
+&lt;p&gt;However, notice that Sam (in yellow) is speaking too. Tough luck Sam, the clever algorithm has muted your microphone.&lt;&#x2F;p&gt;
+&lt;p&gt;The upshot is, if &lt;strong&gt;you&lt;&#x2F;strong&gt; don’t use headphones, &lt;strong&gt;you&lt;&#x2F;strong&gt; will be cutting out and won’t be able to participate. Everyone must wear headphones.
+I recommend comfortable over-the-ear cans that don’t squash your ears. You’ll be able to wear these all day. Get the cheapest you like - comfort is king, they’ll all be fine quality.&lt;&#x2F;p&gt;
+&lt;p&gt;Once you’ve got headphones, you’re almost there, to be honest. The following tasks are small upgrades.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;good-microphone&quot;&gt;Good Microphone&lt;&#x2F;h2&gt;
+&lt;p&gt;Getting a microphone that isn’t in your laptop won’t increase quality much, but not being physically attached to your keyboard is a GREAT thing. What’s the closest thing to your laptop’s mic? It ain’t your mouth. Sound obeys the inverse square lawsidenote &#x27;isq&#x27; &amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Inverse-square_law&quot;&gt;wikipedia:Inverse-square_law&lt;&#x2F;a&gt;&amp;quot; %} , and it’s a harsh mistress. Get a microphone that can be close to your mouth: A headset or mic on a stand is a great option.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;good-lighting&quot;&gt;Good lighting&lt;&#x2F;h2&gt;
+&lt;p&gt;The webcam you’re currently using is probably fine. What isn’t fine is how bad it looks. Webcams perform TERRIBLY in dimly-lit environments. Like your home. While I don’t recommend putting your monitor in front of a window, that &lt;em&gt;would&lt;&#x2F;em&gt; fix it. Try an LED light ring&#x2F;grid, or some other diffuse light.
+If you want proof that your webcam is great quality, go outside during the day and make a call. The sun is very bright!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;good-webcam&quot;&gt;Good webcam&lt;&#x2F;h2&gt;
+&lt;p&gt;As mentioned, quality is not a problem with good lighting. But, positioning can be tricky if you’re using your laptop’s cam. A USB webcam can be positioned wherever you like. If using an external monitor, you can put it up there. The place to put it is as close to the videochat window you’ll have your friendssidenote &#x27;friend&#x27; &amp;quot;A real friend would send them this article, too.&amp;quot; %} on. You’ll naturally look at their faces when speaking to them, and it’s nicest if they feel you’re looking at them too.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;further-reading&quot;&gt;Further Reading&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.hanselman.com&#x2F;blog&#x2F;BrainBytesBackBunsTheProgrammersPriorities.aspx&quot;&gt;Brain Bytes Back Buns&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.hanselman.com&#x2F;blog&#x2F;GoodBetterBestCreatingTheUltimateRemoteWorkerWebcamSetupOnABudget.aspx&quot;&gt;Ultimate Remote Worker Webcam Setup&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Two Lessons Thanos Can Teach Us</title>
+        <published>2019-09-29T00:00:00+00:00</published>
+        <updated>2019-09-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/thanos-focus/"/>
+        <id>https://0atman.com/articles/thanos-focus/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/thanos-focus/">&lt;p&gt;In &lt;em&gt;Avengers: Infinity War&lt;&#x2F;em&gt;, Thanos brings the Infinity Stones together to complete his &amp;quot;life&#x27;s purpose&amp;quot;: Extinguishing half of all life in an overcrowded universe. He&#x27;s an environmentalistsidenote &#x27;environmentalist&#x27; &amp;quot;emphasis on the &lt;em&gt;mentalist&lt;&#x2F;em&gt;&amp;quot; %}, you see.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;lesson-1-decide-then-do&quot;&gt;Lesson 1: Decide, Then Do&lt;&#x2F;h1&gt;
+&lt;p&gt;When watching our heroes try to stop him over the course of the film, I couldn&#x27;t help but be impressed with Thanos&#x27;s singular focus. He isn&#x27;t a normal comic book villain, he&#x27;s not specifically cruel or murderoussidenote &#x27;notexist&#x27; &amp;quot;With, of course, with the one exception that he wants 50% of the universe to not exist&amp;quot; %}, he has weighed the options, and decided to fix overpopulation in a very directsidenote &#x27;exponentialgrowth&#x27; &amp;quot;and short-term, if you know anything about exponential growth&amp;quot; %} way. He then, through the course of the movie, finds all the stones and ends the movie completing his mission and retiring to a garden planet to live out his days.&lt;&#x2F;p&gt;
+&lt;p&gt;In clashes with the superheroes, he demonstrates this focus very clearly. Although his minons are murderous, at every point he resists the distractions of our crew of Iron Man, Doctor Strange, The Hulk, and co. When he has defeated one, he moves on, always keeping his objective, not revenge, in mind.&lt;&#x2F;p&gt;
+&lt;p&gt;Though his goal is of course abhorrent, Thanos&#x27;s &lt;em&gt;methods&lt;&#x2F;em&gt; are worthy of study. The example of research, decision, focus, and singular action are ones we all could learn from: Do as much research as you can to make you convinced of the right course, then go do it!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;lesson-2-don-t-wait-for-retirement&quot;&gt;Lesson 2: Don&#x27;t Wait For Retirement&lt;&#x2F;h1&gt;
+&lt;p&gt;This lesson comes from the next film: &lt;em&gt;Avengers Endgame&lt;&#x2F;em&gt;. In &lt;em&gt;Endgame&lt;&#x2F;em&gt;, The world is reeling from the loss of half of the population. Our heroes are down to half their number, toosidenote &#x27;half&#x27; &amp;quot;Basically, those who sided with Capt. in &lt;em&gt;Civil War&lt;&#x2F;em&gt; survive, the other side don&#x27;t. Co-incidence? You decide!&amp;quot; %}.&lt;&#x2F;p&gt;
+&lt;p&gt;Our heroes rally, and find Thanos on his retirement planet. They&#x27;re somewhat surprised to find no defences, no minions, and the man himself whiling away his life in a solitary, agrarian, life.&lt;&#x2F;p&gt;
+&lt;p&gt;They overpower him trivially, taking him by surprise, and Thor kills him in a moment of rage.sidenote &#x27;15-minutes&#x27; &amp;quot;This is all in the first 15 minutes of the film!&amp;quot;%}&lt;&#x2F;p&gt;
+&lt;p&gt;The rest of the film focuses on getting the Infinity Stones back, and bringing back the 50% of life that Thanos snapped out of existence. The lesson is in the first 15 minutes of the film.&lt;&#x2F;p&gt;
+&lt;p&gt;This lesson is much simpler than the first. Supposedly all Thanos wanted was to live a simple life on his homestead. HE COULD HAVE DONE THIS AT ANY TIME! He was &lt;strong&gt;so&lt;&#x2F;strong&gt; focused on a task that wasn&#x27;t a prerequisite of his happy retirement that he didn&#x27;t see he could just... retire!&lt;&#x2F;p&gt;
+&lt;p&gt;And of course, he only was able to enjoy retirement for a short while before he was killed.&lt;&#x2F;p&gt;
+&lt;p&gt;Friends, this is a violent parable of our society&#x27;s retirement norms. Working full-time at jobs that don&#x27;t make us happy just to die a few short years into retirement? Don&#x27;t do this. &lt;&#x2F;p&gt;
+&lt;p&gt;Ask yourself what you would like to do in retirement, and then, using the focus we learned about in lesson 1, take steps to get to that point AS QUICKLY AS POSSIBLE. If you imagine retiring to a campervan in the sun, YOU CAN DO THAT NOW! Budget how much you need for the van, food and comfort for the rest of your life, then start saving. It&#x27;ll be less than you thinksidenote &#x27;work-optional&#x27; &amp;quot;a good book on this topic is &lt;em&gt;Work Optional&lt;&#x2F;em&gt; by Tanja Hester: https:&#x2F;&#x2F;tanjahester.com&#x2F;books&#x2F;&amp;quot; %}, and you can stop working the moment you&#x27;ve got that amount stashed in the bank. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Decide what the minimum you need to do to succeed is, do it, then stop.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>0-days And Humility</title>
+        <published>2019-09-05T00:00:00+00:00</published>
+        <updated>2019-09-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/0day/"/>
+        <id>https://0atman.com/articles/0day/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/0day/">&lt;p&gt;So imagine you&#x27;re me.sidenote &#x27;&#x27; &amp;quot;Stop crying&amp;quot;%} Now imagine you&#x27;ve accidentally removed yourself from the sudo groupsidenote &#x27;&#x27; &amp;quot;Docker&#x27;s fault&amp;quot;%}.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;No problem&amp;quot;&lt;&#x2F;em&gt;, you might reasonably think, &lt;em&gt;I&#x27;ll just reboot into a root shell and fix that&amp;quot;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Not so fast, hotshot. Your fancy Surface Go has EFI, which means the GRUB menu doesn&#x27;t show, and this machine has a bug that doesn&#x27;t initialise the keyboard until after Ubuntu starts booting. This means pressing escape or holding shift, doesn&#x27;t bring up the GRUB menu to boot into single-user mode.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;OK, can we boot the drive in another machine?&amp;quot;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Great question: It&#x27;s superglued on to the motherboard. This is, effectively, a tablet.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&amp;quot;FSCK IT I&#x27;ll REINSTALL LINUX&amp;quot;&lt;&#x2F;em&gt;, you might reasonably exclaim.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve got news for you, it&#x27;s stopped booting from USB for unknown, spooky, EFI reasons.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;No reinstall, no single-user mode, no sudo&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I despaired for a month before realising I now work in the Cybersecurity department of the Government Digital Service. So, the next day, I talked to one of our ethical hackers, and after 30 minutes of searching, we used a 0-daysidenote &#x27;&#x27; &amp;quot;https:&#x2F;&#x2F;www.exploit-db.com&#x2F;exploits&#x2F;47163&amp;quot; %} to get me root.
+Which, after a quick bit of C++ compiling, was SO EASY:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;i6Ko9Pb.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After that, it was a simple matter to restore my membership in the &lt;code&gt;sudo&lt;&#x2F;code&gt; group and get back up and running with my little Linux tablet.&lt;&#x2F;p&gt;
+&lt;p&gt;The whole matter has opened my eyes to just how trivial &lt;em&gt;privilege escalation&lt;&#x2F;em&gt; can be, even with a very modern, patched system.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>0atman&#x27;s Rule Zero</title>
+        <published>2018-11-05T00:00:00+00:00</published>
+        <updated>2018-11-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/rule-zero/"/>
+        <id>https://0atman.com/articles/rule-zero/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/rule-zero/">&lt;h2 id=&quot;read-the-error-message-again&quot;&gt;Read the error message again.&lt;&#x2F;h2&gt;
+&lt;p&gt;Error messages are the ghosts of the engineers who came before you trying to tell you something - listen to them! &lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Streaming with Icecast</title>
+        <published>2018-02-23T00:00:00+00:00</published>
+        <updated>2018-02-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/icecast/"/>
+        <id>https://0atman.com/articles/icecast/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/icecast/">&lt;p&gt;After years of no satisfactory music radio solution, I researched in earnest how to set up my own broadcast setup, and it was easier than I thought!&lt;&#x2F;p&gt;
+&lt;p&gt;In essense:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Darkice redirects the sound from your speakers to a remote server&lt;&#x2F;li&gt;
+&lt;li&gt;Icecast re-broadcasts that audio to n clients&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Thanks to Ruggero &amp;quot;infiniteproject&amp;quot;, we have a &lt;a href=&quot;https:&#x2F;&#x2F;hub.docker.com&#x2F;r&#x2F;infiniteproject&#x2F;icecast&#x2F;&quot;&gt;dockerized icecast server&lt;&#x2F;a&gt;, run it on your favourite container platform with these settings:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_SOURCE_PASSWORD &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; yourpassword
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_ADMIN_PASSWORD  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; yourpassword
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_RELAY_PASSWORD  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; yourpassword
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_ADMIN_USERNAME  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; DJ_Schmumu
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_ADMIN_EMAIL     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; dj_schmumu
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_LOCATION        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; Spaaaace
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_HOSTNAME        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;your&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;server&lt;&#x2F;span&gt;&lt;span&gt;.here
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_MAX_CLIENTS     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;10
+&lt;&#x2F;span&gt;&lt;span&gt;ICECAST_MAX_SOURCES     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;10
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then on your local machine, run &lt;a href=&quot;http:&#x2F;&#x2F;darkice.org&#x2F;&quot;&gt;Darkice&lt;&#x2F;a&gt;, or the ui, Darksnow, with these settings:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ini&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-ini &quot;&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8be9fd;&quot;&gt;[general]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;duration        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;0      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# duration in s, 0 forever
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;bufferSecs      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;1      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# buffer, in seconds
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;reconnect       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;yes    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# reconnect if disconnected
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8be9fd;&quot;&gt;[input]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;device          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; default &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# or `pulse&amp;#39; for Pulseaudio
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;sampleRate      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;44100   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# sample rate 11025, 22050 or 44100
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;bitsPerSample   &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;16      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# bits
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;channel         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;2       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# 2 = stereo
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8be9fd;&quot;&gt;[icecast2-0]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;bitrateMode     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; vbr       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# variable bit rate (`cbr&amp;#39; constant, `abr&amp;#39; average)
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;quality         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;0       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# 1.0 is best quality
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;format          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; mp3       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# format. Choose `vorbis&amp;#39; for OGG Vorbis
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;bitrate         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;256       &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# bitrate
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;server          &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; your&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;icecast&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;server &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# or IP
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;port            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;8000      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# port for IceCast2 access
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;password        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; very secure password &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# source password to the IceCast2 server
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;mountPoint      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; your_radio_station&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;mp3  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# mount point on the IceCast2 server .mp3 or .ogg
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;name            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; Your Radio Station Name
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Then tune in with your favourite streaming client, or even just hitting your.icecast.server:8000 in a browser, the mp3 will stream!&lt;&#x2F;p&gt;
+&lt;p&gt;You shouldn&#x27;t use this to stream spotify to your friends, as that&#x27;s in breach of their single-listener license, before you ask.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Aframe.io</title>
+        <published>2018-01-17T00:00:00+00:00</published>
+        <updated>2018-01-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/aframe/"/>
+        <id>https://0atman.com/articles/aframe/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/aframe/">&lt;p&gt;Aframe.io is nothing short of astonishing:&lt;&#x2F;p&gt;
+&lt;!-- Embed Code --&gt;
+&lt;div class=&quot;glitch-embed-wrap&quot; style=&quot;height: 420px; width: 100%; border: 1px solid #C3C3C3; border-radius: 5px; box-shadow: 4px 4px #C3C3C3; background-color: white; overflow: hidden;&quot;&gt;
+  &lt;iframe src=&quot;https:&#x2F;&#x2F;glitch.com&#x2F;embed&#x2F;#!&#x2F;embed&#x2F;aframe-basic-guide?path=index.html&amp;previewHeight=320&quot; style=&quot;height: 100%; width: 100%; border: 0;&quot; alt=&quot;code example in glitch&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Testable Documentation Manifesto</title>
+        <published>2017-09-24T00:00:00+00:00</published>
+        <updated>2017-09-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/testable-docs/"/>
+        <id>https://0atman.com/articles/testable-docs/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/testable-docs/">&lt;p&gt;One of the problems with tech documentation (api, installation instructions etc) is that they get stale. APIs change, software and plugins alter their interface and commands, and websites go away.&lt;&#x2F;p&gt;
+&lt;p&gt;To solve this, I propose we write our documentation in a way that can be executed, or verified.&lt;&#x2F;p&gt;
+&lt;p&gt;Luckily, I wrote &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;0atman&#x2F;5ea526a3ae26409da50dd7697eb700e8&quot;&gt;&lt;code&gt;blaze&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; to execute codeblocks inside of markdown, which means that with a little help from a few common unix tools, we can solve this problem.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;testable-software-installation-example&quot;&gt;Testable Software Installation Example&lt;&#x2F;h1&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;set -e
+&lt;&#x2F;span&gt;&lt;span&gt;pip install badpackage_123183183
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The output of executing the very file you are reading now is:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$ .&#x2F;README.md&lt;&#x2F;p&gt;
+&lt;p&gt;Collecting badpackage_123183183&lt;&#x2F;p&gt;
+&lt;p&gt;Could not find a version that satisfies the requirement badpackage_123183183 (from versions: )
+No matching distribution found for badpackage_123183183&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;You now can execute your readme instructions as part of your build process (perhaps with a little setup beforehand, such as running it inside a container), and the exit code (in this case 1) will allow you to fail the build if the instructions are out of date.&lt;&#x2F;p&gt;
+&lt;p&gt;You can get the &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;0atman&#x2F;242cf9d6d99f2fbeb182a090213cf74a&quot;&gt;gist&lt;&#x2F;a&gt; of it here.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;related&quot;&gt;Related&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blaze.oat.sh&quot;&gt;blaze&lt;&#x2F;a&gt;  is lit. It allows language-agnostic literate-style programming&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Blaze: A lightweight literate programing preprocessor</title>
+        <published>2017-09-12T00:00:00+00:00</published>
+        <updated>2017-09-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/blaze/"/>
+        <id>https://0atman.com/articles/blaze/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/blaze/">&lt;p&gt;marginfigure &#x27;blaze&#x27; &#x27;http:&#x2F;&#x2F;instaco.de&#x2F;stream&#x2F;113738&#x27; &#x27;&#x27; %}
+I&#x27;ve been playing with many literate programming tools since this technique of document-first programming came into my life two years ago.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Literate_programming&quot;&gt;Literate programming&lt;&#x2F;a&gt; (LP), a concept that has been around since at least the 80s, is back in the spotlight since the &lt;a href=&quot;http:&#x2F;&#x2F;witheve.com&#x2F;&quot;&gt;Eve&lt;&#x2F;a&gt; language (released by the Eve team headed by Chris Granger of &lt;a href=&quot;http:&#x2F;&#x2F;lighttable.com&quot;&gt;Light Table&lt;&#x2F;a&gt; fame) was released to the public in 2015.&lt;&#x2F;p&gt;
+&lt;p&gt;While LP&#x27;s original concept aimed to create a document-first system whereby the building blocks of the actual code could be read (by the human or compiler) in any order (as it is in Eve), the contemporary state of the art is focused on creating the document-first model with existing procedural languages.&lt;&#x2F;p&gt;
+&lt;p&gt;There are two main kinds of tool in the modern LP category:&lt;&#x2F;p&gt;
+&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;Tools that write beautiful documentation based on comments in source code, such as &lt;a href=&quot;http:&#x2F;&#x2F;ashkenas.com&#x2F;docco&#x2F;&quot;&gt;Docco&lt;&#x2F;a&gt; and (a personal favourite) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;gdeer81&#x2F;marginalia&quot;&gt;Marginalia&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Tools that allow you to execute code-fenced source code within some markup, such as &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;zyedidia&#x2F;Literate&quot;&gt;Literate&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jostylr&#x2F;litpro&quot;&gt;litpro&lt;&#x2F;a&gt;, and tiny &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vijithassar&#x2F;lit&quot;&gt;lit&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The first is an evolution of the documentation processors you will be familiar with, no real innovation has happened in this space since &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Javadoc&quot;&gt;Javadoc&lt;&#x2F;a&gt;. (Much though I love &lt;a href=&quot;http:&#x2F;&#x2F;www.sphinx-doc.org&#x2F;en&#x2F;stable&#x2F;index.html&quot;&gt;Sphynx&lt;&#x2F;a&gt; et al)&lt;&#x2F;p&gt;
+&lt;p&gt;The second category I think is worth exploring.&lt;&#x2F;p&gt;
+&lt;p&gt;It is into this ecosystem I present &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;0atman&#x2F;5ea526a3ae26409da50dd7697eb700e8&quot;&gt;Blaze&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;blaze-is-tiny&quot;&gt;Blaze is Tiny:&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;#!&#x2F;usr&#x2F;bin&#x2F;env sh
+&lt;&#x2F;span&gt;&lt;span&gt;args=$1
+&lt;&#x2F;span&gt;&lt;span&gt;script=$2
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;file_extension=$(echo $script |awk -F . &amp;#39;{if (NF&amp;gt;1) {print $NF}}&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;if [ &amp;quot;$file_extension&amp;quot; = &amp;quot;md&amp;quot; ]
+&lt;&#x2F;span&gt;&lt;span&gt;then
+&lt;&#x2F;span&gt;&lt;span&gt;    cat $script | awk &amp;#39;{ if (&#x2F;^```&#x2F;) { i++; next } if ( i % 2 == 1) { print } }&amp;#39; &amp;gt; $script.out
+&lt;&#x2F;span&gt;&lt;span&gt;    $args $script.out
+&lt;&#x2F;span&gt;&lt;span&gt;    exit_code=$?
+&lt;&#x2F;span&gt;&lt;span&gt;    rm $script.out
+&lt;&#x2F;span&gt;&lt;span&gt;else
+&lt;&#x2F;span&gt;&lt;span&gt;    $args $script
+&lt;&#x2F;span&gt;&lt;span&gt;    exit_code=$?
+&lt;&#x2F;span&gt;&lt;span&gt;fi
+&lt;&#x2F;span&gt;&lt;span&gt;exit $exit_code
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;But what it gives you is the ability to execute your markdown files as though they were scripts: It is a drop-in replacement for &lt;code&gt;&#x2F;usr&#x2F;bin&#x2F;env&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#!blaze python
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8be9fd;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;hi&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It then allows as many paramaters to be passed to your interpreter as you like (unlike normal shebangs), which means you can use tools like &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;pantsbuild&#x2F;pex&quot;&gt;pex&lt;&#x2F;a&gt;sidenote &#x27;&#x27; &amp;quot;Note that we are able to use pex&#x27;s ephemeral venv trick to run python with any requirements pre-installed&amp;quot; %}:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#!blaze pex arrow --
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;arrow
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8be9fd;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;quot;run&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, arrow&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;now&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;humanize&lt;&#x2F;span&gt;&lt;span&gt;())  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# blaze only processes .md files, plain scripts can be run as-normal
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Blaze&#x27;s REAL trick, is that if it is called with a &lt;code&gt;.md&lt;&#x2F;code&gt; file, it only executes code inside triple-backtick codefences, as in this all-encompasing example of a literate program with built-in requirements:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;#!blaze pex flask flask_restful --
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# Imports
+&lt;&#x2F;span&gt;&lt;span&gt;First the imports, this demo requires the `flask_restful` package.
+&lt;&#x2F;span&gt;&lt;span&gt;Then we &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#66d9ef;&quot;&gt;set &lt;&#x2F;span&gt;&lt;span&gt;up the Flask wsgi application &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#66d9ef;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span&gt;, `app` &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;and &lt;&#x2F;span&gt;&lt;span&gt;the api wrapper, `api`.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;``python
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span&gt;flask &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;Flask
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span&gt;flask_restful &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;Resource, Api
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;app &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;Flask&lt;&#x2F;span&gt;&lt;span&gt;(__name__)
+&lt;&#x2F;span&gt;&lt;span&gt;api &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;Api&lt;&#x2F;span&gt;&lt;span&gt;(app)
+&lt;&#x2F;span&gt;&lt;span&gt;``
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# Flask Restful resources
+&lt;&#x2F;span&gt;&lt;span&gt;We define a single `HelloWorld` resource, that responds &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;with &lt;&#x2F;span&gt;&lt;span&gt;a simple json
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#66d9ef;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span&gt;on a `&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;GET&lt;&#x2F;span&gt;&lt;span&gt;` request.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;``python
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ff79c6;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;text-decoration:underline;color:#8be9fd;&quot;&gt;HelloWorld&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;text-decoration:underline;font-style:italic;color:#8be9fd;&quot;&gt;Resource&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ff79c6;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;get&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;hello&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;world&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;``
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# Routing
+&lt;&#x2F;span&gt;&lt;span&gt;`api&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;add_resource&lt;&#x2F;span&gt;&lt;span&gt;()` wires the `Resource` &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#ff79c6;color:#f8f8f0;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span&gt; `HelloWorld` into the flask
+&lt;&#x2F;span&gt;&lt;span&gt;router at `&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;`.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;``
+&lt;&#x2F;span&gt;&lt;span&gt;api&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;add_resource&lt;&#x2F;span&gt;&lt;span&gt;(HelloWorld, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;&#x2F;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;``
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#6272a4;&quot;&gt;# Run Server
+&lt;&#x2F;span&gt;&lt;span&gt;After we have created everything, we run the flask werkzeug server.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;``
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;__name__ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f1fa8c;&quot;&gt;&amp;#39;__main__&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;:
+&lt;&#x2F;span&gt;&lt;span&gt;    app&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;run&lt;&#x2F;span&gt;&lt;span&gt;()
+&lt;&#x2F;span&gt;&lt;span&gt;``
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;marginnote &#x27;&#x27; &amp;quot;In the previous codeblock, double backticks should be triple, but that messes with markdown highlighting - sorry!&amp;quot; %}&lt;&#x2F;p&gt;
+&lt;p&gt;Magic, right?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;overhead&quot;&gt;Overhead&lt;&#x2F;h2&gt;
+&lt;p&gt;Blaze introduces minimal startup overhead, somewhere between 5-20ms, an almost zero runtime overhead (&lt;code&gt;sh&lt;&#x2F;code&gt; is running, I suppose).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;python-shebang&quot;&gt;Python Shebang&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;λ .&#x2F;py-test.py
+&lt;&#x2F;span&gt;&lt;span&gt;hi
+&lt;&#x2F;span&gt;&lt;span&gt;.&#x2F;py-test.py  0.02s user 0.00s system 94% cpu 0.025 total
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;blaze-shebang&quot;&gt;Blaze Shebang&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;λ .&#x2F;blaze-test.py
+&lt;&#x2F;span&gt;&lt;span&gt;hi
+&lt;&#x2F;span&gt;&lt;span&gt;.&#x2F;blaze-test.py  0.02s user 0.00s system 67% cpu 0.030 total
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;prior-art-acknowledgements&quot;&gt;Prior Art &#x2F; Acknowledgements&lt;&#x2F;h2&gt;
+&lt;p&gt;Blaze is currently a hacked-together LP tool that is only suitable for one-off scripts. I borrowed the awk code-fence-stripping code from &lt;a href=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;trauber&#x2F;4955706&quot;&gt;@trauber&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;and-the-name&quot;&gt;And the name?&lt;&#x2F;h2&gt;
+&lt;p&gt;Blaze is lit, bro 😎&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Clojure: Can macros do something that couldn&#x27;t be done with a function?</title>
+        <published>2017-05-16T00:00:00+00:00</published>
+        <updated>2017-05-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/clojure-macros/"/>
+        <id>https://0atman.com/articles/clojure-macros/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/clojure-macros/">&lt;p&gt;Yes.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When Guido van Rossum proposed adding a case statement to Python, the committee turned him down. So Python has no case statement.&lt;&#x2F;p&gt;
+&lt;p&gt;If Rich [Hickey] didn&#x27;t want a case statement, but I did, I can have one.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;43973727&#x2F;clojure-can-macros-do-something-that-couldnt-be-done-with-a-function&quot;&gt;[stackoverflow]&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2017-07-31-edit&quot;&gt;2017-07-31 EDIT:&lt;&#x2F;h3&gt;
+&lt;p&gt;This revealation started me on the path to presenting the magic of macros and homoiconicity at a Skyscanner Lightning Talk. The slides are &lt;a href=&quot;https:&#x2F;&#x2F;docs.google.com&#x2F;presentation&#x2F;d&#x2F;1qEmCWnCR82pOm4sp5FTTVr8TbbtRmWbcjD1dOvcnvpU&#x2F;&quot;&gt;here&lt;&#x2F;a&gt;, click the image below to watch:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=Gkwc3332L-0&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.youtube.com&#x2F;vi&#x2F;Gkwc3332L-0&#x2F;0.jpg&quot; alt=&quot;clojure macros talk&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>NISTS New 2017 Password Rules</title>
+        <published>2017-05-02T00:00:00+00:00</published>
+        <updated>2017-05-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/nists/"/>
+        <id>https://0atman.com/articles/nists/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/nists/">&lt;p&gt;This is actually really awesome, passwords don&#x27;t have to suck&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;favor-the-user&quot;&gt;Favor the user&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make your password policies user friendly and put the burden on the verifier when possible. In other words, we need to stop asking users to do things that aren’t actually improving security.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Much research has gone into the efficacy of many of our so-called “best practices” and it turns out they don’t help enough to be worth the pain they cause.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;size-matters&quot;&gt;Size matters&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You should allow a maximum length of at least 64, so no more “Sorry, your password can’t be longer than 16 characters.” We often advise people to use passphrases, so they should be allowed to use all common punctuation characters and any language to improve usability and increase variety.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;no-composition-rules&quot;&gt;No composition rules&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What this means is, no more rules that force you to use particular characters or combinations, like those daunting conditions on some password reset pages that say, “Your password must contain one lowercase letter, one uppercase letter, one number, four symbols but not &amp;amp;%#@_, and the surname of at least one astronaut.”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Let people choose freely, and encourage longer phrases instead of hard-to-remember passwords or illusory complexity such as pA55w+rd.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;no-password-hints&quot;&gt;No password hints&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;None. If I wanted people have a better chance at guessing my password, I’d write it on a note attached to my screen.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;knowledge-based-authentication-kba-is-out&quot;&gt;Knowledge-based authentication (KBA) is out&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;KBA is when a site says, “Pick from a list of questions – Where did you attend high school? What’s your favourite football team? – and tell us the answer in case we ever need to check that it’s you.”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;no-more-expiration-without-reason&quot;&gt;No more expiration without reason.&lt;&#x2F;h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is my favourite piece of advice: If we want users to comply and choose long, hard-to-guess passwords, we shouldn’t make them change those passwords unnecessarily.
+The only time passwords should be reset is when they are forgotten, if they have been phished, or if you think (or know) that your password database has been stolen and could therefore be subjected to an offline brute-force attack.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;source: &lt;a href=&quot;https:&#x2F;&#x2F;nakedsecurity.sophos.com&#x2F;2016&#x2F;08&#x2F;18&#x2F;nists-new-password-rules-what-you-need-to-know&#x2F;&quot;&gt;nakedsecurity.sophos.com&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The stars are right, I&#x27;m taking a sabbatical.</title>
+        <published>2017-01-20T00:00:00+00:00</published>
+        <updated>2017-01-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/wudang/"/>
+        <id>https://0atman.com/articles/wudang/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/wudang/">&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;SOmiEqk.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;My girlfriend &amp;amp; I are going to &lt;a href=&quot;http:&#x2F;&#x2F;www.wudanggongfu.com&#x2F;&quot;&gt;Wudang Mountain&lt;&#x2F;a&gt;, in the central province of Hubei, China, to study at a Daoist academy for 2 months. The syllabus contains kungfu, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Qigong&quot;&gt;qigong&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Tai_chi&quot;&gt;tai chi&lt;&#x2F;a&gt;, as well as meditation and other esoterica. I will use my spare time to study Mandarin. &lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m excited about this rather unique opportunity to lay a foundation of mental and physical health for us for years to come. &lt;&#x2F;p&gt;
+&lt;p&gt;Our affairs are tied up, our bags packed. See you in March!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Social Media</title>
+        <published>2016-12-11T00:00:00+00:00</published>
+        <updated>2016-12-11T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/social-media/"/>
+        <id>https://0atman.com/articles/social-media/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/social-media/">&lt;p&gt;We hate it, but we can&#x27;t get enough of it. It&#x27;s so useful, but the subtle allure of the infinitly-scolling timeline is a dangerous, unproductive time sink.&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s how to fix it:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;un[follow&#x2F;subscribe&#x2F;watch] EVERYONE.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;facebook&quot;&gt;Facebook&lt;&#x2F;h1&gt;
+&lt;p&gt;Facebook is vastly useful. For many people, the killer feature is how easy it is to organise events. But features such as groups, messaging and polls are great too.&lt;&#x2F;p&gt;
+&lt;p&gt;The timeline makes you hate your friends.&lt;&#x2F;p&gt;
+&lt;p&gt;To fix: Unfollow everyone. Click the timeline options and then click on all of your friends to never see their food pictures and baby photos again. Do this for everyone, &lt;em&gt;without exception&lt;&#x2F;em&gt;. Yes, that includes your significant other. The goal here is to break the habit of checking facebook. This may take a long time, if you have something of the order of a thousand friends - as many people do.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;GF43QIm.png&quot; alt=&quot;Unfollow&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After doing this, facebook will be working for YOU: push notifications and&#x2F;or emails will be your sole prompt to open the app. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;gIuswjS.png&quot; alt=&quot;fb&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(Bonus tip: When facebook says it&#x27;s someones&#x27;s birthday, force yourself to post a &amp;quot;happy birthday&amp;quot; message to them, or unfriend them. If you don&#x27;t even say hi on someone&#x27;s birthday: you are not even acquaintances) &lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h1 id=&quot;reddit&quot;&gt;Reddit&lt;&#x2F;h1&gt;
+&lt;p&gt;Reddit&#x27;s another timesink with actual useful features. Diving into a breaking news story, finding out leaked information about a new product&#x2F;service, or simply lowering your blood pressure browsing &lt;a href=&quot;https:&#x2F;&#x2F;www.reddit.com&#x2F;r&#x2F;aww&#x2F;&quot;&gt;r&#x2F;aww&lt;&#x2F;a&gt; are fantastic.&lt;&#x2F;p&gt;
+&lt;p&gt;Subreddits good, front page bad.&lt;&#x2F;p&gt;
+&lt;p&gt;Unsubscribe from everything:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;j1qHVNj.png&quot; alt=&quot;reddit&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Side-effect: You can still navigate to &lt;code&gt;&#x2F;r&#x2F;all&lt;&#x2F;code&gt;, but good luck wading through all the &lt;code&gt;&#x2F;r&#x2F;THE_DONALD&lt;&#x2F;code&gt; and &lt;code&gt;&#x2F;r&#x2F;EnoughTrumpSpam&lt;&#x2F;code&gt; noise.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;This technique can be used for almost any social media site. Give it a try, it&#x27;s given me the benefits of unsubscribing from these services without losing the genuine benefits.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>A Long View</title>
+        <published>2016-11-15T00:00:00+00:00</published>
+        <updated>2016-11-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/long-view/"/>
+        <id>https://0atman.com/articles/long-view/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/long-view/">&lt;p&gt;Something to keep in mind:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It might not feel like it today, but technology and science is a bigger story than Donald Trump. Think about it. Who ran Italy when Galileo made his discoveries? How was Italy even run back then? Who was king during the industrial revolution in England? The quirks and flaws of government leaders are not relevant information when studying the enlightenment. In the long run, the Galileos and James Watts of the world have even more influence than the Napoleons.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And the fact that I can Google the answer to those above questions — that we have given humanity endless knowledge at the tap of a touchpad — will ultimately be recognized as more important than the identity of whoever sits in the White House, even if he has no attention span and boasts of sexual assaults. As horrible as 9&#x2F;11 was, the fact that one single corporation might connect almost all of the world’s population on a single service is, in the long run, actually bigger news.&amp;quot; -Steven Levy
+sidenote &#x27;bc&#x27; &#x27;https:&#x2F;&#x2F;backchannel.com&#x2F;the-iphone-is-bigger-than-donald-trump-4be61d9f3ce0&#x27; %}&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Shipping Containers Ate The Shipping Industry</title>
+        <published>2016-08-05T00:00:00+00:00</published>
+        <updated>2016-08-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/docker-containers/"/>
+        <id>https://0atman.com/articles/docker-containers/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/docker-containers/">&lt;p&gt;Software containers have, almost overnight, made traditional piecemeal-deployment processes obsolete in the same way as the physical shipping container did for traditional crate-based shipping.&lt;&#x2F;p&gt;
+&lt;p&gt;Just because you &lt;em&gt;can&lt;&#x2F;em&gt; write and ship software without using containers, doesn&#x27;t mean you &lt;em&gt;should&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Just as we don&#x27;t have to chose to use processes, it&#x27;s just how we run code on an OS, there is no longer a need to choose containers, it&#x27;s just how we do things now. That all systems will use containers in the future is certainly inevitable, it is a revolutionary way of thinking in the same way that the UNIX process model was.&lt;&#x2F;p&gt;
+&lt;p&gt;Maybe your current architecture doesn&#x27;t lend itself to containerisation - your current architecture is now wrong.
+Maybe you are running on platform that doesn&#x27;t support containers - your platform is now obsolete.
+Maybe you&#x27;re just one developer hacking together something experimental on your own machine - you are only hurting you own productivity.&lt;&#x2F;p&gt;
+&lt;p&gt;Container-based solutions will eat everything, and it is right that they should.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>B For Brexit</title>
+        <published>2016-06-24T00:00:00+00:00</published>
+        <updated>2016-06-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/b-for-brexit/"/>
+        <id>https://0atman.com/articles/b-for-brexit/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/b-for-brexit/">&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;2LYFN8Y.jpg&quot; alt=&quot;london&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;marginnote &#x27;source&#x27; &#x27;Text adapted from &lt;a href=&quot;http:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt0434409&#x2F;&quot;&gt;V For Vendetta&lt;&#x2F;a&gt;, plot suggested by the great British public.&#x27; %}&lt;&#x2F;p&gt;
+&lt;p&gt;Our story begins, as these stories often do, with a young, up-and-coming politician.
+He&#x27;s a deeply religious man and a member of the Conservative party. He&#x27;s completely single-minded and has no regard for the political process. The more power he attains, the more obvious his zealotry and the more aggressive his supporters become.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;9BgWR07.jpg&quot; alt=&quot;boris&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Eventually, his party launches a special project in the name of &amp;quot;national security&amp;quot;. At first, it&#x27;s believed to be radical anti-terror measures and is pursued without regard to its cost. However, the true goal of this project is power. Complete and total hegemonic domination.
+The project, however, is shut down by a human rights investigation, but the efforts of those involved are not in vain, for a new ability to wage war is born. Imagine surveillance, the most complete surveillance you can, and then imagine that you and you alone control it, but if your ultimate goal is power, how best to use such a weapon?&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s at this point in our story that along comes a spider.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;ehS88Kg.jpg&quot; alt=&quot;farage&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;He&#x27;s a man seemingly without a conscience, for whom the ends always justify the means, and it is he who suggests that their target should not be an enemy of the country but rather the country itself. Three targets are chosen for a false-flag &amp;quot;terrorist attack&amp;quot;: a school, a tube station and a water treatment plant. 
+Several hundred die. Fueled by the media, fear and panic spread quickly, fracturing and dividing the country until, at last, the true goal comes into view. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;1t7ONFt.jpg&quot; alt=&quot;protest&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Before the terrorist crisis, no-one would have predicted the results of the election that year, no-one. And then, not long after the election, lo and behold a miracle. Some believe it was the work of God himself, but it was a security company controlled by certain party members that made them all obscenely rich.&lt;&#x2F;p&gt;
+&lt;p&gt;A year later, several extremists are tried, found guilty and executed while a memorial is built to canonise their victims.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;ycjQIAc.jpg&quot; alt=&quot;arrest&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But the end result, the true genius of the plan was the fear. Fear became the ultimate tool of this government, and through it, our politician was ultimately appointed to the position of Prime Minister.&lt;&#x2F;p&gt;
+&lt;p&gt;The rest, as they say, is history.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The European Union was created to stop WW3</title>
+        <published>2016-06-23T00:00:00+00:00</published>
+        <updated>2016-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/eu/"/>
+        <id>https://0atman.com/articles/eu/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/eu/">&lt;p&gt;&lt;strong&gt;The European Union&#x27;s importance is simple and profound, in a way that people have forgotten.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It&#x27;s not about improving trade (&lt;a href=&quot;http:&#x2F;&#x2F;www.ft.com&#x2F;cms&#x2F;s&#x2F;2&#x2F;3748166e-3151-11e6-ad39-3fee5ffe5b5b.html&quot;&gt;though it does&lt;&#x2F;a&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;Its not about upholding universal human rights (&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;European_Court_of_Human_Rights&quot;&gt;though it does&lt;&#x2F;a&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;Nor is it about standing up to international corporate amorality (&lt;a href=&quot;http:&#x2F;&#x2F;www.nytimes.com&#x2F;2015&#x2F;04&#x2F;16&#x2F;business&#x2F;international&#x2F;european-union-google-antitrust-case.html?_r=0&quot;&gt;though it does&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The European Union was created, quite simply, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;European_Union#History&quot;&gt;to prevent&lt;&#x2F;a&gt; the atrocities of WW2 happening again.
+It is difficult to imagine the term &lt;em&gt;&amp;quot;to stop WW3&amp;quot;&lt;&#x2F;em&gt; used without hyperbole, but this is one of the few cases where it can, &lt;strong&gt;and must&lt;&#x2F;strong&gt; be.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.bbc.co.uk&#x2F;news&#x2F;uk-politics-eu-referendum-36584905&quot;&gt;Go vote&lt;&#x2F;a&gt;, you have until 10pm today.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;i.imgur.com&#x2F;ZR0Sa2Y.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>0atman&#x27;s Third Rule</title>
+        <published>2016-02-08T00:00:00+00:00</published>
+        <updated>2016-02-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/3rd-rule/"/>
+        <id>https://0atman.com/articles/3rd-rule/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/3rd-rule/">&lt;h2 id=&quot;no-bug-can-withstand-two-developers&quot;&gt;No bug can withstand two developers.&lt;&#x2F;h2&gt;
+&lt;p&gt;Or:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&#x27;s dangerous to bugfix alone. Take a friend.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>0atman&#x27;s Second Rule</title>
+        <published>2016-01-21T00:00:00+00:00</published>
+        <updated>2016-01-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/2nd-rule/"/>
+        <id>https://0atman.com/articles/2nd-rule/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/2nd-rule/">&lt;h2 id=&quot;line-comments-are-apologies-to-your-future-self&quot;&gt;Line comments are apologies to your future self.&lt;&#x2F;h2&gt;
+&lt;p&gt;It&#x27;s partly pragmatism:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Whenever you feel the need to comment a block of code, which could even be as little as a single line and make the total code longer then the code it replaces, you should encapsulate it into another function given that the function name clearly explains the purpose of the code.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What should be decisive in the decision to encapsulate functionality is not code length but semantic distance between what the function does and how it does it.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Refactoring, Martin Fowler, p. 76-77&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;But it&#x27;s also that, given the above, comments are very likely to be code smells, indicating bad code that NEEDED a comment.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>0atman&#x27;s First Rule</title>
+        <published>2015-12-28T00:00:00+00:00</published>
+        <updated>2015-12-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/1st-rule/"/>
+        <id>https://0atman.com/articles/1st-rule/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/1st-rule/">&lt;blockquote&gt;
+&lt;p&gt;If you make your own bricks, your house will be shit.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Auto-start full-screen web page on Raspbian (Jessie) startup</title>
+        <published>2015-11-05T00:00:00+00:00</published>
+        <updated>2015-11-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/raspbian-autostart/"/>
+        <id>https://0atman.com/articles/raspbian-autostart/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/raspbian-autostart/">&lt;p&gt;1 Install Chromium&lt;&#x2F;p&gt;
+&lt;p&gt;2 Create a file called &lt;code&gt;~&#x2F;.config&#x2F;autostart&#x2F;chromium.desktop&lt;&#x2F;code&gt; with the following contents:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ini&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-ini &quot;&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8be9fd;&quot;&gt;[Desktop Entry]
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;Encoding&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#6be5fd;&quot;&gt;UTF&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;8
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;Name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;Connect
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;Comment&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;Checks internet connectivity
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;Exec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;usr&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;bin&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;&#x2F;&lt;&#x2F;span&gt;&lt;span&gt;chromium&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;browser &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span&gt;incognito &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;--&lt;&#x2F;span&gt;&lt;span&gt;kiosk &lt;&#x2F;span&gt;&lt;span style=&quot;color:#6be5fd;&quot;&gt;YOUR_WEB_ADDRESS
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;3 Profit!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fabric&#x27;s behaviour for booleans is non-obvious</title>
+        <published>2015-11-02T00:00:00+00:00</published>
+        <updated>2015-11-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/fab-bools/"/>
+        <id>https://0atman.com/articles/fab-bools/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/fab-bools/">&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ff79c6;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;get_latest&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#ffb86c;&quot;&gt;no_download&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;False&lt;&#x2F;span&gt;&lt;span&gt;):
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#66d9ef;&quot;&gt;bool&lt;&#x2F;span&gt;&lt;span&gt;(no_download)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;$ fab get_latest
+&lt;&#x2F;span&gt;&lt;span&gt;False
+&lt;&#x2F;span&gt;&lt;span&gt;$ fab get_latest:no_download
+&lt;&#x2F;span&gt;&lt;span&gt;True
+&lt;&#x2F;span&gt;&lt;span&gt;$ fab get_latest:no_download=False
+&lt;&#x2F;span&gt;&lt;span&gt;True
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Everything passed in to fabric is a string, so be aware that &lt;code&gt;bool(&amp;quot;0&amp;quot;) == True&lt;&#x2F;code&gt; and &lt;code&gt;bool(&amp;quot;False&amp;quot;) == True&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Bools are a special case, make sure they default to false and you&#x27;ll get nice behavior. There seems to be no way to make bool args default to True, and then be overridden by False in code.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Getting the trackpoint working in ubuntu on the Thinkpad X240</title>
+        <published>2015-09-24T00:00:00+00:00</published>
+        <updated>2015-09-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/x240-trackpad/"/>
+        <id>https://0atman.com/articles/x240-trackpad/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/x240-trackpad/">&lt;p&gt;TrackPoint scrolling doesn&#x27;t work out of box, but you can easily fix it by yourself.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Add &lt;code&gt;psmouse.proto=bare&lt;&#x2F;code&gt; option to you kernel during boot&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Modify &lt;code&gt;&#x2F;etc&#x2F;default&#x2F;grub&lt;&#x2F;code&gt; with the GRUB_CMDLINE_LINUX option (&lt;code&gt;GRUB_CMDLINE_LINUX=&amp;quot;psmouse.proto=bare quiet splash&lt;&#x2F;code&gt;)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;As root run &lt;code&gt;sudo update-grub&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Create &#x2F;usr&#x2F;share&#x2F;X11&#x2F;xorg.conf.d&#x2F;11-trackpoint-wheel-emulation.conf&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;script src=&quot;https:&#x2F;&#x2F;gist.github.com&#x2F;0atman&#x2F;b08bee673d6381d7f1f2.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Reboot&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Don&#x27;t forget to disable your touchpad in the bios to avoid the cursor wobbling when you click!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;ask.fedoraproject.org&#x2F;en&#x2F;question&#x2F;46089&#x2F;x240-scroll-with-trackpoint-and-use-fingerprint-reader&#x2F;&quot;&gt;source&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pi Portable</title>
+        <published>2015-08-22T00:00:00+00:00</published>
+        <updated>2015-08-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/portable/"/>
+        <id>https://0atman.com/articles/portable/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/portable/">&lt;p&gt;My plan is to connect &lt;a href=&quot;http:&#x2F;&#x2F;www.amazon.com&#x2F;AOC-E1649FWU-USB-Powered-Portable-Monitor&#x2F;dp&#x2F;B005SEZR0G&#x2F;ref=sr_1_1&#x2F;182-8953425-3346443?ie=UTF8&amp;amp;qid=1440360553&amp;amp;sr=8-1&amp;amp;keywords=usb+monitors&quot;&gt;this monitor&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;http:&#x2F;&#x2F;ws-na.amazon-adsystem.com&#x2F;widgets&#x2F;q?_encoding=UTF8&amp;amp;ASIN=B005SEZR0G&amp;amp;Format=_SL250_&amp;amp;ID=AsinImage&amp;amp;MarketPlace=US&amp;amp;ServiceVersion=20070822&amp;amp;WS=1&amp;amp;tag=geblbyjo-20&quot; alt=&quot;USB Monitor&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;To the Pi, and then both to a large battery pack via &lt;a href=&quot;http:&#x2F;&#x2F;www.amazon.co.uk&#x2F;DROK-Multimeter-Charging-Detector-Alignment-Red-Blue&#x2F;dp&#x2F;B00J4H5I3E%3Fpsc%3D1%26SubscriptionId%3DAKIAILSHYYTFIVPWUY6Q%26tag%3Dduc08-21%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00J4H5I3E&quot;&gt;this power meter&lt;&#x2F;a&gt; for calibration.&lt;&#x2F;p&gt;
+&lt;p&gt;Based on the Pi&#x27;s draw of about 2W, and the monitor&#x27;s draw of about 1W, I think (at 5V) that an 11Ah battery could power them for 18h.&lt;&#x2F;p&gt;
+&lt;p&gt;This is worth investigating, watch this space!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Provable Languages</title>
+        <published>2015-04-01T00:00:00+00:00</published>
+        <updated>2015-04-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/provable-languages/"/>
+        <id>https://0atman.com/articles/provable-languages/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/provable-languages/">&lt;p&gt;The slides for my talk, &amp;quot;Are There Any Provable Real-World Languages&amp;quot;, I gave at Southampton University are 
+&lt;a href=&quot;https:&#x2F;&#x2F;docs.google.com&#x2F;presentation&#x2F;d&#x2F;16CDmdGv2HIy1dfhDS18GRu2RZnqHkdZnNJhI8DKe9QE&#x2F;edit?usp=sharing&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Colourising Watch</title>
+        <published>2015-03-10T00:00:00+00:00</published>
+        <updated>2015-03-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/colorising-watch/"/>
+        <id>https://0atman.com/articles/colorising-watch/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/colorising-watch/">&lt;p&gt;For many years I had assumed (based on some comments in forums) that the &lt;code&gt;watch&lt;&#x2F;code&gt; unix command had a bug, and could not display colourised terminal output, even when using the &lt;code&gt;-c&lt;&#x2F;code&gt; colour option.&lt;&#x2F;p&gt;
+&lt;p&gt;This made me sad.&lt;&#x2F;p&gt;
+&lt;p&gt;Recently I&#x27;ve been writing tests in py.test, which colourises the output in red for failed test cases. My tests take less than 1s, so while I&#x27;m writing them, I run &lt;code&gt;watch py.test&lt;&#x2F;code&gt;, watch it fail, and keep writing it till it passes. &lt;&#x2F;p&gt;
+&lt;p&gt;After a few days of non-coloured output, I resumed my search and found &lt;a href=&quot;http:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;10776977&#x2F;more-command-alternative-that-does-support-colors&quot;&gt;this&lt;&#x2F;a&gt;. My search was over!&lt;&#x2F;p&gt;
+&lt;p&gt;The simple solution is this: Not only must watch be told (with &lt;code&gt;-c&lt;&#x2F;code&gt;) to interpret colours, but the command you are watching must be too. This is because both operate in &lt;code&gt;color=auto&lt;&#x2F;code&gt; mode; colours are only output if the program detects it is being run in an interactive terminal, not a pipe.&lt;&#x2F;p&gt;
+&lt;p&gt;I simply ran &lt;code&gt;watch -c py.test --color=yes&lt;&#x2F;code&gt; and shed tears of joy!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Cult Of Done Manifesto</title>
+        <published>2015-01-12T00:00:00+00:00</published>
+        <updated>2015-01-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/cult-of-done/"/>
+        <id>https://0atman.com/articles/cult-of-done/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/cult-of-done/">&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;There are three states of being. Not knowing, action and completion.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Accept that everything is a draft. It helps to get it done.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;There is no editing stage.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Pretending you know what you&#x27;re doing is almost the same as knowing what you are doing, so just accept that you know what you&#x27;re doing even if you don&#x27;t and do it.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Banish procrastination. If you wait more than a week to get an idea done, abandon it.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The point of being done is not to finish but to get other things done.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Once you&#x27;re done you can throw it away.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Laugh at perfection. It&#x27;s boring and keeps you from being done.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;People without dirty hands are wrong. Doing something makes you right.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Failure counts as done. So do mistakes.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Destruction is a variant of done.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;If you have an idea and publish it on the internet, that counts as a ghost of done.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Done is the engine of more.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;I present to you a manifesto of done. This was written in collaboration with Kio Stark in 20 minutes because we only had 20 minutes to get it done.&lt;&#x2F;p&gt;
+&lt;p&gt;-- Bre Pettis, 3rd of March, 2009
+sidenote &#x27;bre&#x27; &#x27;http:&#x2F;&#x2F;www.brepettis.com&#x2F;blog&#x2F;2009&#x2F;3&#x2F;3&#x2F;the-cult-of-done-manifesto.html&#x27; %}&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Cory Doctorow, on hearing aids</title>
+        <published>2014-12-16T00:00:00+00:00</published>
+        <updated>2014-12-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/cory-on-hearing-aids/"/>
+        <id>https://0atman.com/articles/cory-on-hearing-aids/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/cory-on-hearing-aids/">&lt;p&gt;If you’re my age and grew up with the Walkman or you’re little younger and you grow up with the iPod, you will have logged enough punishing earbud hours that by the time you reach a certain age you will almost certainly need a hearing aid&lt;&#x2F;p&gt;
+&lt;p&gt;It is vanishingly unlikely that that hearing aid will be a retro, beige, hipster, analog transistor hearing aid.&lt;&#x2F;p&gt;
+&lt;p&gt;Instead it will be a computer that you put in your body and, depending on how it works, it can:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Make you hear things that aren’t there&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Make you not hear things that are there&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Tell other people what you’ve heard&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;strong&gt;We’ve got to get this right&lt;&#x2F;strong&gt;
+sidenote &#x27;cory&#x27; &#x27;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=4ZqodxGufR8)&#x27; %}&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Everything Is Broken</title>
+        <published>2014-05-29T00:00:00+00:00</published>
+        <updated>2014-05-29T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/everything-is-broken/"/>
+        <id>https://0atman.com/articles/everything-is-broken/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/everything-is-broken/">&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;There’s your choice: constantly risk clicking on dangerous malware, or live under an overpass, leaving notes on the lawn of your former house telling your children you love them and miss them.”&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;medium.com&#x2F;message&#x2F;everything-is-broken-81e5f33a24e1&quot;&gt;source&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Adam Savage’s Ten Rules for Success</title>
+        <published>2014-04-06T00:00:00+00:00</published>
+        <updated>2014-04-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/adam-savages-ten-rules-for-success/"/>
+        <id>https://0atman.com/articles/adam-savages-ten-rules-for-success/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/adam-savages-ten-rules-for-success/">&lt;h2 id=&quot;1-get-good-at-something&quot;&gt;1. Get good at something.&lt;&#x2F;h2&gt;
+&lt;p&gt;Really good. Get good at as many things as you can. Being good at one thing makes it easier to get good at other things.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;2-getting-good-at-stuff-takes-practice&quot;&gt;2. Getting good at stuff takes practice.&lt;&#x2F;h2&gt;
+&lt;p&gt;Lots and lots of practice.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3-get-obsessed&quot;&gt;3. Get OBSESSED.&lt;&#x2F;h2&gt;
+&lt;p&gt;Everyone at the top of their field is obsessed with what they’re doing.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;4-doing-something-well-and-thoroughly-is-its-own-reward&quot;&gt;4. Doing something well and thoroughly is its OWN reward.&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;5-show-and-tell&quot;&gt;5. Show and Tell.&lt;&#x2F;h2&gt;
+&lt;p&gt;If you do something well and you’re happy with it, for FSM’s sake, tell EVERYONE.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;6-if-you-want-something-ask&quot;&gt;6. If you want something, ASK.&lt;&#x2F;h2&gt;
+&lt;p&gt;If something piques your interest, tell someone. If you want to learn something, ask someone, like your BOSS. As an employer, I can tell you, people who want to learn new skills are people I want to keep employed.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;7-have-goals&quot;&gt;7. Have GOALS.&lt;&#x2F;h2&gt;
+&lt;p&gt;Make up goals. Set goals. Regularly assess where you are and where you want to be in terms of them. This is a kind of prayer that works, and works well. Allow for the fact that things will NEVER turn out like you think they will, and you must be prepared to end up miles from where you intended.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;8-be-nice-to-everyone&quot;&gt;8. Be nice. To EVERYONE.&lt;&#x2F;h2&gt;
+&lt;p&gt;Life is way too short to be an asshole. If you are an asshole, apologize.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;9-fail&quot;&gt;9. FAIL.&lt;&#x2F;h2&gt;
+&lt;p&gt;You will fail. It’s one of our jobs in life. Keep failing. When you fail, admit it. When you don’t, don’t get cocky. ‘Cause you’re just about to fail again.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;10-work-your-ass-off&quot;&gt;10. WORK YOUR ASS OFF.&lt;&#x2F;h2&gt;
+&lt;p&gt;Work like your life depends on it…&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;boingboing.net&#x2F;2013&#x2F;08&#x2F;19&#x2F;adam-savages-ten-rules-for-s.html&quot;&gt;source&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Unicode Identifiers In Python 3</title>
+        <published>2013-11-15T00:00:00+00:00</published>
+        <updated>2013-11-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/unicode-identifiers-in-python/"/>
+        <id>https://0atman.com/articles/unicode-identifiers-in-python/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/unicode-identifiers-in-python/">&lt;p&gt;I&#x27;m not sure what I think about this.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#282a36;color:#f8f8f2;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span&gt;Σ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8be9fd;&quot;&gt;sum
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff79c6;&quot;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50fa7b;&quot;&gt;Σ&lt;&#x2F;span&gt;&lt;span&gt;([&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;])
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bd93f9;&quot;&gt;6
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ACL2 Is Fascinating</title>
+        <published>2013-11-12T00:00:00+00:00</published>
+        <updated>2013-11-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Tris
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://0atman.com/articles/acl2/"/>
+        <id>https://0atman.com/articles/acl2/</id>
+        
+        <content type="html" xml:base="https://0atman.com/articles/acl2/">&lt;pre style=&quot;background-color:#282a36;color:#f8f8f2;&quot;&gt;&lt;code&gt;&lt;span&gt;:::lisp
+&lt;&#x2F;span&gt;&lt;span&gt;ACL2 !&amp;gt; (thm (=(+ a b) (+ b a)))
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Q.E.D.
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Summary
+&lt;&#x2F;span&gt;&lt;span&gt;Form:  ( THM ...)
+&lt;&#x2F;span&gt;&lt;span&gt;Rules: ((:DEFINITION =)
+&lt;&#x2F;span&gt;&lt;span&gt;        (:EXECUTABLE-COUNTERPART TAU-SYSTEM))
+&lt;&#x2F;span&gt;&lt;span&gt;Time:  0.00 seconds (prove: 0.00, print: 0.00, other: 0.00)
+&lt;&#x2F;span&gt;&lt;span&gt;Prover steps counted:  10
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Proof succeeded.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | </title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1></h1>
+    
+    <div class="space"></div>
+
+
+
+    <p>Title: Brexit Vote Amendment: An open letter to my MP
+Date: 2017-12-14 12:00
+Category: politics</p>
+<p>Dear Kate Hoey,</p>
+<p>I'm astonished you voted against the amendment today which, as I understand it, it gives you a  legal guarantee of a vote on the final Brexit deal struck with Brussels.</p>
+<p>I would be very interested to know why you thought handing more power to the Tories and DUP would be a good idea.</p>
+<p>Yours sincerely,</p>
+<blockquote>
+<p>0atman</p>
+</blockquote>
+<p>EDIT: Kate's response:</p>
+<blockquote>
+<p>Thanks. There was already a vote on the final deal being given. This was an amendment which was designed to allow the Article 50 process to be extended if the deal came late on.  There will either be a deal and if it is voted down then we go over to a no deal WTO rules situation.
+If you look at the comments of some zealot Remainers you will see that they saw this amendment as a way to start the process  of stopping Brexit eg Labour Lord Adonis for example. So along with frank field I voted against the amendment.Of course a lot of my Party just wanted to defeat the Government. I think the will of the British people is too important to play Party politics with and my country comes before Party.
+Thanks for letting me know your views 
+Best wishes 
+Kate</p>
+</blockquote>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

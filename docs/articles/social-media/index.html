@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | Social Media</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>Social Media</h1>
+    
+    <p class="secondary">11 December, 2016</p>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/social-media/#facebook">Facebook</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/social-media/#reddit">Reddit</a>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>We hate it, but we can't get enough of it. It's so useful, but the subtle allure of the infinitly-scolling timeline is a dangerous, unproductive time sink.</p>
+<p>Here's how to fix it:</p>
+<p><strong>un[follow/subscribe/watch] EVERYONE.</strong></p>
+<h1 id="facebook">Facebook</h1>
+<p>Facebook is vastly useful. For many people, the killer feature is how easy it is to organise events. But features such as groups, messaging and polls are great too.</p>
+<p>The timeline makes you hate your friends.</p>
+<p>To fix: Unfollow everyone. Click the timeline options and then click on all of your friends to never see their food pictures and baby photos again. Do this for everyone, <em>without exception</em>. Yes, that includes your significant other. The goal here is to break the habit of checking facebook. This may take a long time, if you have something of the order of a thousand friends - as many people do.</p>
+<p><img src="http://i.imgur.com/GF43QIm.png" alt="Unfollow" /></p>
+<p>After doing this, facebook will be working for YOU: push notifications and/or emails will be your sole prompt to open the app. </p>
+<p><img src="https://i.imgur.com/gIuswjS.png" alt="fb" /></p>
+<blockquote>
+<p>(Bonus tip: When facebook says it's someones's birthday, force yourself to post a &quot;happy birthday&quot; message to them, or unfriend them. If you don't even say hi on someone's birthday: you are not even acquaintances) </p>
+</blockquote>
+<h1 id="reddit">Reddit</h1>
+<p>Reddit's another timesink with actual useful features. Diving into a breaking news story, finding out leaked information about a new product/service, or simply lowering your blood pressure browsing <a href="https://www.reddit.com/r/aww/">r/aww</a> are fantastic.</p>
+<p>Subreddits good, front page bad.</p>
+<p>Unsubscribe from everything:</p>
+<p><img src="https://i.imgur.com/j1qHVNj.png" alt="reddit" /></p>
+<p>Side-effect: You can still navigate to <code>/r/all</code>, but good luck wading through all the <code>/r/THE_DONALD</code> and <code>/r/EnoughTrumpSpam</code> noise.</p>
+<hr />
+<p>This technique can be used for almost any social media site. Give it a try, it's given me the benefits of unsubscribing from these services without losing the genuine benefits.</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

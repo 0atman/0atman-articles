@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "aa1e094ed0569715",
+    "type": "split",
+    "children": [
+      {
+        "id": "77e759562a49db89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a33af531c36429f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/articles/2021-06-16-make-fiction-podcast.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "541b1b3dbd651b34",
+    "type": "split",
+    "children": [
+      {
+        "id": "6adc783b7d2bef8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5451d32c56a18d9e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "87ade80fd328275e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "15cf3b577a6e3584",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 287.5086555480957
+  },
+  "right": {
+    "id": "d9cc30189aec47a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "213b9cc9e9a3ad17",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2267d20a300ba53d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/articles/2021-06-16-make-fiction-podcast.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0eab75c4aa8c8256",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/articles/2021-06-16-make-fiction-podcast.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f67516d541ed7718",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "58ecab0a8dad0621",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/articles/2021-06-16-make-fiction-podcast.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-projects:Open projects": false
+    }
+  },
+  "active": "7a33af531c36429f",
+  "lastOpenFiles": [
+    "templates/shortcodes/sidenote.html~",
+    "templates/shortcodes/sidenote.html",
+    "templates/shortcodes",
+    "content/articles/2020-05-10-polyphase-one-month.md",
+    "templates/page.html~",
+    "templates/index.html~",
+    "content/_index.md",
+    "content/about.md",
+    "content/articles/electron_wayland.md",
+    "content/articles/post-1.md",
+    "sass/style.scss~",
+    "sass/_theme.scss~",
+    "docs/tufte.css",
+    "docs/light_mode.svg",
+    "docs/dark_mode.svg",
+    "docs/style.css",
+    "docs",
+    "config.toml~",
+    "themes.backup/hook/static/light_mode.svg",
+    "themes.backup/hook/static/dark_mode.svg",
+    "themes.backup/hook/screenshot4.png",
+    "themes.backup/hook/screenshot3.png",
+    "themes.backup/hook/screenshot2.png",
+    "themes.backup/hook/screenshot.png",
+    "themes.backup/hook/README.md",
+    "static/light_mode.svg",
+    "static/dark_mode.svg",
+    "themes/hook/content/_index-backup.md",
+    "themes/terminimal/content/pages/archive.md",
+    "themes/terminimal/content/pages/about.md",
+    "themes/terminimal/content/pages/_index.md",
+    "themes/terminimal/content/zola-is-nice.md",
+    "themes/terminimal/content/welcome-terminimal-theme.md",
+    "themes/terminimal/content/more-ranting.md",
+    "themes/terminimal/content/learning-javascript.md",
+    "themes/terminimal/content/i-dont-like-javascript.md",
+    "themes/terminimal/content/_index.md",
+    "themes/terminimal/README.md",
+    "themes/terminimal/LICENSE.md",
+    "themes/terminimal/LICENSE-Hack.md",
+    "themes/inky/content/posts/responsive-images/index.md",
+    "themes/inky/content/gallery/suspendisse-quis/index.md",
+    "themes/inky/content/gallery/quisque-viverra/index.md",
+    "themes/inky/content/gallery/luctus-dolor/index.md",
+    "themes/inky/content/posts/typography.md",
+    "themes/inky/content/posts/lorem-ipsum.md"
+  ]
+}

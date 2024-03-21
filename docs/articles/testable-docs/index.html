@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | The Testable Documentation Manifesto</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>The Testable Documentation Manifesto</h1>
+    
+    <p class="secondary">24 September, 2017</p>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/testable-docs/#testable-software-installation-example">Testable Software Installation Example</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://0atman.com/articles/testable-docs/#related">Related</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>One of the problems with tech documentation (api, installation instructions etc) is that they get stale. APIs change, software and plugins alter their interface and commands, and websites go away.</p>
+<p>To solve this, I propose we write our documentation in a way that can be executed, or verified.</p>
+<p>Luckily, I wrote <a href="https://gist.github.com/0atman/5ea526a3ae26409da50dd7697eb700e8"><code>blaze</code></a> to execute codeblocks inside of markdown, which means that with a little help from a few common unix tools, we can solve this problem.</p>
+<h1 id="testable-software-installation-example">Testable Software Installation Example</h1>
+<pre data-lang="shell" style="background-color:#282a36;color:#f8f8f2;" class="language-shell "><code class="language-shell" data-lang="shell"><span>
+</span><span>set -e
+</span><span>pip install badpackage_123183183
+</span></code></pre>
+<p>The output of executing the very file you are reading now is:</p>
+<blockquote>
+<p>$ ./README.md</p>
+<p>Collecting badpackage_123183183</p>
+<p>Could not find a version that satisfies the requirement badpackage_123183183 (from versions: )
+No matching distribution found for badpackage_123183183</p>
+</blockquote>
+<p>You now can execute your readme instructions as part of your build process (perhaps with a little setup beforehand, such as running it inside a container), and the exit code (in this case 1) will allow you to fail the build if the instructions are out of date.</p>
+<p>You can get the <a href="https://gist.github.com/0atman/242cf9d6d99f2fbeb182a090213cf74a">gist</a> of it here.</p>
+<h3 id="related">Related</h3>
+<ul>
+<li><a href="https://blaze.oat.sh">blaze</a>  is lit. It allows language-agnostic literate-style programming</li>
+</ul>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

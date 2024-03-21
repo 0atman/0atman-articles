@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | </title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1></h1>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/drafts/publishing-vanilla/#open-source-build">Open Source Build</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/drafts/publishing-vanilla/#private-build-with-jenkins">Private Build with Jenkins</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/drafts/publishing-vanilla/#the-future">The Future</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/drafts/publishing-vanilla/#wrap-up">Wrap-up</a>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>Title: Publishing Vanilla
+Category: Coding
+Date: 2015-08-18 11:30
+Summary: Being a description on how we publish our CSS framework at Canonical
+Tags: canonical, ubuntu, node, Sass</p>
+<p>We've got a new CSS framework at Canonical, named <a href="http://ubuntudesign.github.io/vanilla-framework/">Vanilla</a>. My colleague <a href="http://design.canonical.com/author/ya-bo-ng/">Ant</a> has a great write-up <a href="http://design.canonical.com/2015/06/introducing-vanilla/">introducing Vanilla</a>. Essentially it's a CSS microframework powered by Sass. The build process consists of two steps, an open source build, and a private build.</p>
+<h3 id="open-source-build">Open Source Build</h3>
+<p>While there are inevitably componants that need to be kept private (keys, tokens, etc.) being Canonical, we want to keep much of the build in the open, in addition to the code. We wanted the build to be as automated and close to CI/CD principles as possible. Here's what happens:</p>
+<p>Committing to our <a href="https://github.com/ubuntudesign/vanilla-framework">github repository</a> kicks off a <a href="https://travis-ci.org/ubuntudesign/vanilla-framework">travis</a> build that runs <a href="http://gulpjs.com/">gulp</a> tests, which include <a href="https://github.com/brigade/Sass-lint/">sass-lint</a>. And we also use <a href="https://david-dm.org/ubuntudesign/vanilla-framework#info=devDependencies">david-dm.org</a> to make sure our npm dependencies are up to date. All of these have nice badges we can link to right from our github page, so the first thing people see is the heath of our project. I really like this, it keeps us honest, and informs the community.</p>
+<p>Not everything can be done with travis, however, as publishing Vanilla to <a href="https://www.npmjs.com/">npm</a>, updating our project page and demo site require some private credentials. For the confidential build, we use <a href="https://jenkins-ci.org/">Jenkins</a>. (formally Hudson, a java-based build management system.).</p>
+<h3 id="private-build-with-jenkins">Private Build with Jenkins</h3>
+<p>Our Jenkins build does a few things:</p>
+<ol start="0">
+<li>Increment the package.json version number</li>
+<li>npm publish <a href="https://www.npmjs.com/package/vanilla-framework">(package)</a></li>
+<li>Build Sass with <code>npm install</code></li>
+<li>Upload css to our assets server</li>
+<li>Update Sassdoc</li>
+<li>Update demo site with new CSS</li>
+</ol>
+<p><a href="http://design.canonical.com/author/nottrobin/">Robin</a> put this functionality together in a neat bash script: <a href="https://github.com/ubuntudesign/vanilla-builder/blob/master/publish.sh">publish.sh</a>.</p>
+<p>We use this script in a Jenkins build that we kick off with a few parameters, <code>point</code>, <code>minor</code> and <code>major</code> to indicate the version to be updated in package.json. This allows our devs push-button releases on the fly, with the same build, from bugfixes all the way up to stable releases (1.0.0)</p>
+<p>After less than 30 seconds, our <a href="http://ubuntudesign.github.io/vanilla-framework/demo/">demo site</a>, which showcases framework elements and their usage, is updated. This demo is styled with the latest version of Vanilla, and also serves as documentation and a test of the CSS. We take advantage of github's html publishing feature, <a href="https://pages.github.com/">Github Pages</a>. Anyone can grab - or even hotlink - the files on our <a href="http://ubuntudesign.github.io/vanilla-framework/releases.html">release page</a>.</p>
+<h3 id="the-future">The Future</h3>
+<p>It'd be nice for the regression test (which we currently just eyeball) to be automated, perhaps with a visual diff tool such as <a href="https://github.com/Huddle/PhantomCSS">PhantomCSS</a> or a bespoke solution with Selenium.</p>
+<h3 id="wrap-up">Wrap-up</h3>
+<p>Vanilla is ready to hack on, go get it <a href="http://design.canonical.com/2015/06/introducing-vanilla/">here</a> and tell us what you think! (And yes, you can get it in colours other than <em>Ubuntu Orange</em>)</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | The Cult Of Done Manifesto</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>The Cult Of Done Manifesto</h1>
+    
+    <p class="secondary">12 January, 2015</p>
+    
+    <div class="space"></div>
+
+
+
+    <ol start="0">
+<li>
+<p>There are three states of being. Not knowing, action and completion.</p>
+</li>
+<li>
+<p>Accept that everything is a draft. It helps to get it done.</p>
+</li>
+<li>
+<p>There is no editing stage.</p>
+</li>
+<li>
+<p>Pretending you know what you're doing is almost the same as knowing what you are doing, so just accept that you know what you're doing even if you don't and do it.</p>
+</li>
+<li>
+<p>Banish procrastination. If you wait more than a week to get an idea done, abandon it.</p>
+</li>
+<li>
+<p>The point of being done is not to finish but to get other things done.</p>
+</li>
+<li>
+<p>Once you're done you can throw it away.</p>
+</li>
+<li>
+<p>Laugh at perfection. It's boring and keeps you from being done.</p>
+</li>
+<li>
+<p>People without dirty hands are wrong. Doing something makes you right.</p>
+</li>
+<li>
+<p>Failure counts as done. So do mistakes.</p>
+</li>
+<li>
+<p>Destruction is a variant of done.</p>
+</li>
+<li>
+<p>If you have an idea and publish it on the internet, that counts as a ghost of done.</p>
+</li>
+<li>
+<p>Done is the engine of more.</p>
+</li>
+</ol>
+<p>I present to you a manifesto of done. This was written in collaboration with Kio Stark in 20 minutes because we only had 20 minutes to get it done.</p>
+<p>-- Bre Pettis, 3rd of March, 2009
+sidenote 'bre' 'http://www.brepettis.com/blog/2009/3/3/the-cult-of-done-manifesto.html' %}</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

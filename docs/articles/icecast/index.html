@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | Streaming with Icecast</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>Streaming with Icecast</h1>
+    
+    <p class="secondary">23 February, 2018</p>
+    
+    <div class="space"></div>
+
+
+
+    <p>After years of no satisfactory music radio solution, I researched in earnest how to set up my own broadcast setup, and it was easier than I thought!</p>
+<p>In essense:</p>
+<ul>
+<li>Darkice redirects the sound from your speakers to a remote server</li>
+<li>Icecast re-broadcasts that audio to n clients</li>
+</ul>
+<p>Thanks to Ruggero &quot;infiniteproject&quot;, we have a <a href="https://hub.docker.com/r/infiniteproject/icecast/">dockerized icecast server</a>, run it on your favourite container platform with these settings:</p>
+<pre data-lang="sql" style="background-color:#282a36;color:#f8f8f2;" class="language-sql "><code class="language-sql" data-lang="sql"><span>
+</span><span>ICECAST_SOURCE_PASSWORD </span><span style="color:#ff79c6;">=</span><span> yourpassword
+</span><span>ICECAST_ADMIN_PASSWORD  </span><span style="color:#ff79c6;">=</span><span> yourpassword
+</span><span>ICECAST_RELAY_PASSWORD  </span><span style="color:#ff79c6;">=</span><span> yourpassword
+</span><span>ICECAST_ADMIN_USERNAME  </span><span style="color:#ff79c6;">=</span><span> DJ_Schmumu
+</span><span>ICECAST_ADMIN_EMAIL     </span><span style="color:#ff79c6;">=</span><span> dj_schmumu
+</span><span>ICECAST_LOCATION        </span><span style="color:#ff79c6;">=</span><span> Spaaaace
+</span><span>ICECAST_HOSTNAME        </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">your</span><span>.</span><span style="color:#bd93f9;">server</span><span>.here
+</span><span>ICECAST_MAX_CLIENTS     </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">10
+</span><span>ICECAST_MAX_SOURCES     </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">10
+</span></code></pre>
+<p>Then on your local machine, run <a href="http://darkice.org/">Darkice</a>, or the ui, Darksnow, with these settings:</p>
+<pre data-lang="ini" style="background-color:#282a36;color:#f8f8f2;" class="language-ini "><code class="language-ini" data-lang="ini"><span>
+</span><span style="font-style:italic;color:#8be9fd;">[general]
+</span><span style="font-style:italic;color:#ffb86c;">duration        </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">0      </span><span style="color:#6272a4;"># duration in s, 0 forever
+</span><span style="font-style:italic;color:#ffb86c;">bufferSecs      </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">1      </span><span style="color:#6272a4;"># buffer, in seconds
+</span><span style="font-style:italic;color:#ffb86c;">reconnect       </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">yes    </span><span style="color:#6272a4;"># reconnect if disconnected
+</span><span>
+</span><span style="font-style:italic;color:#8be9fd;">[input]
+</span><span style="font-style:italic;color:#ffb86c;">device          </span><span style="color:#ff79c6;">=</span><span> default </span><span style="color:#6272a4;"># or `pulse&#39; for Pulseaudio
+</span><span style="font-style:italic;color:#ffb86c;">sampleRate      </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">44100   </span><span style="color:#6272a4;"># sample rate 11025, 22050 or 44100
+</span><span style="font-style:italic;color:#ffb86c;">bitsPerSample   </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">16      </span><span style="color:#6272a4;"># bits
+</span><span style="font-style:italic;color:#ffb86c;">channel         </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">2       </span><span style="color:#6272a4;"># 2 = stereo
+</span><span>
+</span><span style="font-style:italic;color:#8be9fd;">[icecast2-0]
+</span><span style="font-style:italic;color:#ffb86c;">bitrateMode     </span><span style="color:#ff79c6;">=</span><span> vbr       </span><span style="color:#6272a4;"># variable bit rate (`cbr&#39; constant, `abr&#39; average)
+</span><span style="font-style:italic;color:#ffb86c;">quality         </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">1</span><span style="color:#ff79c6;">.</span><span style="color:#bd93f9;">0       </span><span style="color:#6272a4;"># 1.0 is best quality
+</span><span style="font-style:italic;color:#ffb86c;">format          </span><span style="color:#ff79c6;">=</span><span> mp3       </span><span style="color:#6272a4;"># format. Choose `vorbis&#39; for OGG Vorbis
+</span><span style="font-style:italic;color:#ffb86c;">bitrate         </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">256       </span><span style="color:#6272a4;"># bitrate
+</span><span style="font-style:italic;color:#ffb86c;">server          </span><span style="color:#ff79c6;">=</span><span> your</span><span style="color:#ff79c6;">.</span><span>icecast</span><span style="color:#ff79c6;">.</span><span>server </span><span style="color:#6272a4;"># or IP
+</span><span style="font-style:italic;color:#ffb86c;">port            </span><span style="color:#ff79c6;">= </span><span style="color:#bd93f9;">8000      </span><span style="color:#6272a4;"># port for IceCast2 access
+</span><span style="font-style:italic;color:#ffb86c;">password        </span><span style="color:#ff79c6;">=</span><span> very secure password </span><span style="color:#6272a4;"># source password to the IceCast2 server
+</span><span style="font-style:italic;color:#ffb86c;">mountPoint      </span><span style="color:#ff79c6;">=</span><span> your_radio_station</span><span style="color:#ff79c6;">.</span><span>mp3  </span><span style="color:#6272a4;"># mount point on the IceCast2 server .mp3 or .ogg
+</span><span style="font-style:italic;color:#ffb86c;">name            </span><span style="color:#ff79c6;">=</span><span> Your Radio Station Name
+</span></code></pre>
+<p>Then tune in with your favourite streaming client, or even just hitting your.icecast.server:8000 in a browser, the mp3 will stream!</p>
+<p>You shouldn't use this to stream spotify to your friends, as that's in breach of their single-listener license, before you ask.</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

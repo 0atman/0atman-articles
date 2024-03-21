@@ -1,0 +1,7 @@
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+	background-color: #555;
+}
+
+h1, h2, body {
+    font-family: "Source Serif Pro", Baskerville, "Libre Baskerville", serif;
+}

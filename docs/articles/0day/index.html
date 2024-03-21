@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | 0-days And Humility</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>0-days And Humility</h1>
+    
+    <p class="secondary">5 September, 2019</p>
+    
+    <div class="space"></div>
+
+
+
+    <p>So imagine you're me.sidenote '' &quot;Stop crying&quot;%} Now imagine you've accidentally removed yourself from the sudo groupsidenote '' &quot;Docker's fault&quot;%}.</p>
+<p><em>&quot;No problem&quot;</em>, you might reasonably think, <em>I'll just reboot into a root shell and fix that&quot;.</em></p>
+<p>Not so fast, hotshot. Your fancy Surface Go has EFI, which means the GRUB menu doesn't show, and this machine has a bug that doesn't initialise the keyboard until after Ubuntu starts booting. This means pressing escape or holding shift, doesn't bring up the GRUB menu to boot into single-user mode.</p>
+<p><em>&quot;OK, can we boot the drive in another machine?&quot;</em></p>
+<p>Great question: It's superglued on to the motherboard. This is, effectively, a tablet.</p>
+<p><em>&quot;FSCK IT I'll REINSTALL LINUX&quot;</em>, you might reasonably exclaim.</p>
+<p>I've got news for you, it's stopped booting from USB for unknown, spooky, EFI reasons.</p>
+<p><strong>No reinstall, no single-user mode, no sudo</strong></p>
+<p>I despaired for a month before realising I now work in the Cybersecurity department of the Government Digital Service. So, the next day, I talked to one of our ethical hackers, and after 30 minutes of searching, we used a 0-daysidenote '' &quot;https://www.exploit-db.com/exploits/47163&quot; %} to get me root.
+Which, after a quick bit of C++ compiling, was SO EASY:</p>
+<p><img src="https://i.imgur.com/i6Ko9Pb.png" alt="" /></p>
+<p>After that, it was a simple matter to restore my membership in the <code>sudo</code> group and get back up and running with my little Linux tablet.</p>
+<p>The whole matter has opened my eyes to just how trivial <em>privilege escalation</em> can be, even with a very modern, patched system.</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

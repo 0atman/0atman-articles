@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | </title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1></h1>
+    
+    <div class="space"></div>
+
+
+
+    <p>Title: An open letter to my MP, Simon Hughes
+Date: 2014-07-16 10:20
+Category: privacy</p>
+<p>Thank you for taking the time to explain the bill to me. I am afraid to say that I am unsatisfied by your defence of the bill.</p>
+<p>You say that the ECJ ruled the existing law illegal, so what we in the UK need is an emergency, temporary provision to cover this case.</p>
+<p>Let me quote the ECJ ruling, 
+&quot;The Court takes the view that, by requiring the retention of those data and by allowing the competent national authorities to access those data, <strong>the directive interferes in a particularly serious manner with the fundamental rights to respect for private life</strong> and to the protection of personal data. Furthermore, the fact that data are retained and subsequently used without the subscriber or registered user being informed is <strong>likely to generate in the persons concerned a feeling that their private lives are the subject of constant surveillance</strong>.&quot; [emphasis mine]</p>
+<p>Please explain, how DRIP is anything but a circumvention of the ECJ's ruling, violating our rights to a private life?
+Expiration in 2016 does not reassure me, I do not want my private life to be spied on by my government for one day, not one second.</p>
+<p>I am very concerned,</p>
+<p>Tristram Oaten</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | NISTS New 2017 Password Rules</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>NISTS New 2017 Password Rules</h1>
+    
+    <p class="secondary">2 May, 2017</p>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/nists/#favor-the-user">Favor the user</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/nists/#size-matters">Size matters</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/nists/#no-composition-rules">No composition rules</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/nists/#no-password-hints">No password hints</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/nists/#knowledge-based-authentication-kba-is-out">Knowledge-based authentication (KBA) is out</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/nists/#no-more-expiration-without-reason">No more expiration without reason.</a>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>This is actually really awesome, passwords don't have to suck</p>
+<h2 id="favor-the-user">Favor the user</h2>
+<blockquote>
+<p>Make your password policies user friendly and put the burden on the verifier when possible. In other words, we need to stop asking users to do things that aren’t actually improving security.</p>
+</blockquote>
+<blockquote>
+<p>Much research has gone into the efficacy of many of our so-called “best practices” and it turns out they don’t help enough to be worth the pain they cause.</p>
+</blockquote>
+<h2 id="size-matters">Size matters</h2>
+<blockquote>
+<p>You should allow a maximum length of at least 64, so no more “Sorry, your password can’t be longer than 16 characters.” We often advise people to use passphrases, so they should be allowed to use all common punctuation characters and any language to improve usability and increase variety.</p>
+</blockquote>
+<h2 id="no-composition-rules">No composition rules</h2>
+<blockquote>
+<p>What this means is, no more rules that force you to use particular characters or combinations, like those daunting conditions on some password reset pages that say, “Your password must contain one lowercase letter, one uppercase letter, one number, four symbols but not &amp;%#@_, and the surname of at least one astronaut.”</p>
+</blockquote>
+<blockquote>
+<p>Let people choose freely, and encourage longer phrases instead of hard-to-remember passwords or illusory complexity such as pA55w+rd.</p>
+</blockquote>
+<h2 id="no-password-hints">No password hints</h2>
+<blockquote>
+<p>None. If I wanted people have a better chance at guessing my password, I’d write it on a note attached to my screen.</p>
+</blockquote>
+<h2 id="knowledge-based-authentication-kba-is-out">Knowledge-based authentication (KBA) is out</h2>
+<blockquote>
+<p>KBA is when a site says, “Pick from a list of questions – Where did you attend high school? What’s your favourite football team? – and tell us the answer in case we ever need to check that it’s you.”</p>
+</blockquote>
+<h2 id="no-more-expiration-without-reason">No more expiration without reason.</h2>
+<blockquote>
+<p>This is my favourite piece of advice: If we want users to comply and choose long, hard-to-guess passwords, we shouldn’t make them change those passwords unnecessarily.
+The only time passwords should be reset is when they are forgotten, if they have been phished, or if you think (or know) that your password database has been stolen and could therefore be subjected to an offline brute-force attack.</p>
+</blockquote>
+<p>source: <a href="https://nakedsecurity.sophos.com/2016/08/18/nists-new-password-rules-what-you-need-to-know/">nakedsecurity.sophos.com</a></p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

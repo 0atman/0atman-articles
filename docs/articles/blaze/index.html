@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | Blaze: A lightweight literate programing preprocessor</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>Blaze: A lightweight literate programing preprocessor</h1>
+    
+    <p class="secondary">12 September, 2017</p>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/blaze/#blaze-is-tiny">Blaze is Tiny:</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/blaze/#overhead">Overhead</a>
+            
+                <ul>
+                    
+                        <li>
+                            <a href="https://0atman.com/articles/blaze/#python-shebang">Python Shebang</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://0atman.com/articles/blaze/#blaze-shebang">Blaze Shebang</a>
+                        </li>
+                    
+                </ul>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/blaze/#prior-art-acknowledgements">Prior Art &#x2F; Acknowledgements</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://0atman.com/articles/blaze/#and-the-name">And the name?</a>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>marginfigure 'blaze' 'http://instaco.de/stream/113738' '' %}
+I've been playing with many literate programming tools since this technique of document-first programming came into my life two years ago.</p>
+<p><a href="https://en.wikipedia.org/wiki/Literate_programming">Literate programming</a> (LP), a concept that has been around since at least the 80s, is back in the spotlight since the <a href="http://witheve.com/">Eve</a> language (released by the Eve team headed by Chris Granger of <a href="http://lighttable.com">Light Table</a> fame) was released to the public in 2015.</p>
+<p>While LP's original concept aimed to create a document-first system whereby the building blocks of the actual code could be read (by the human or compiler) in any order (as it is in Eve), the contemporary state of the art is focused on creating the document-first model with existing procedural languages.</p>
+<p>There are two main kinds of tool in the modern LP category:</p>
+<ol start="0">
+<li>
+<ol>
+<li>Tools that write beautiful documentation based on comments in source code, such as <a href="http://ashkenas.com/docco/">Docco</a> and (a personal favourite) <a href="https://github.com/gdeer81/marginalia">Marginalia</a></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Tools that allow you to execute code-fenced source code within some markup, such as <a href="https://github.com/zyedidia/Literate">Literate</a>, <a href="https://github.com/jostylr/litpro">litpro</a>, and tiny <a href="https://github.com/vijithassar/lit">lit</a>.</li>
+</ol>
+</li>
+</ol>
+<p>The first is an evolution of the documentation processors you will be familiar with, no real innovation has happened in this space since <a href="https://en.wikipedia.org/wiki/Javadoc">Javadoc</a>. (Much though I love <a href="http://www.sphinx-doc.org/en/stable/index.html">Sphynx</a> et al)</p>
+<p>The second category I think is worth exploring.</p>
+<p>It is into this ecosystem I present <a href="https://gist.github.com/0atman/5ea526a3ae26409da50dd7697eb700e8">Blaze</a>.</p>
+<h2 id="blaze-is-tiny">Blaze is Tiny:</h2>
+<pre data-lang="shell" style="background-color:#282a36;color:#f8f8f2;" class="language-shell "><code class="language-shell" data-lang="shell"><span>#!/usr/bin/env sh
+</span><span>args=$1
+</span><span>script=$2
+</span><span>
+</span><span>file_extension=$(echo $script |awk -F . &#39;{if (NF&gt;1) {print $NF}}&#39;)
+</span><span>
+</span><span>if [ &quot;$file_extension&quot; = &quot;md&quot; ]
+</span><span>then
+</span><span>    cat $script | awk &#39;{ if (/^```/) { i++; next } if ( i % 2 == 1) { print } }&#39; &gt; $script.out
+</span><span>    $args $script.out
+</span><span>    exit_code=$?
+</span><span>    rm $script.out
+</span><span>else
+</span><span>    $args $script
+</span><span>    exit_code=$?
+</span><span>fi
+</span><span>exit $exit_code
+</span></code></pre>
+<p>But what it gives you is the ability to execute your markdown files as though they were scripts: It is a drop-in replacement for <code>/usr/bin/env</code>:</p>
+<pre data-lang="python" style="background-color:#282a36;color:#f8f8f2;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#6272a4;">#!blaze python
+</span><span style="color:#8be9fd;">print</span><span>(</span><span style="color:#f1fa8c;">&quot;hi&quot;</span><span>)
+</span></code></pre>
+<p>It then allows as many paramaters to be passed to your interpreter as you like (unlike normal shebangs), which means you can use tools like <a href="https://github.com/pantsbuild/pex">pex</a>sidenote '' &quot;Note that we are able to use pex's ephemeral venv trick to run python with any requirements pre-installed&quot; %}:</p>
+<pre data-lang="python" style="background-color:#282a36;color:#f8f8f2;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#6272a4;">#!blaze pex arrow --
+</span><span style="color:#ff79c6;">import </span><span>arrow
+</span><span style="color:#8be9fd;">print</span><span>(</span><span style="color:#f1fa8c;">&quot;run&quot;</span><span>, arrow</span><span style="color:#ff79c6;">.</span><span style="color:#50fa7b;">now</span><span>()</span><span style="color:#ff79c6;">.</span><span style="color:#50fa7b;">humanize</span><span>())  </span><span style="color:#6272a4;"># blaze only processes .md files, plain scripts can be run as-normal
+</span></code></pre>
+<p>Blaze's REAL trick, is that if it is called with a <code>.md</code> file, it only executes code inside triple-backtick codefences, as in this all-encompasing example of a literate program with built-in requirements:</p>
+<pre data-lang="python" style="background-color:#282a36;color:#f8f8f2;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#6272a4;">#!blaze pex flask flask_restful --
+</span><span>
+</span><span style="color:#6272a4;"># Imports
+</span><span>First the imports, this demo requires the `flask_restful` package.
+</span><span>Then we </span><span style="font-style:italic;color:#66d9ef;">set </span><span>up the Flask wsgi application </span><span style="font-style:italic;color:#66d9ef;">object</span><span>, `app` </span><span style="color:#ff79c6;">and </span><span>the api wrapper, `api`.
+</span><span>
+</span><span>``python
+</span><span style="color:#ff79c6;">from </span><span>flask </span><span style="color:#ff79c6;">import </span><span>Flask
+</span><span style="color:#ff79c6;">from </span><span>flask_restful </span><span style="color:#ff79c6;">import </span><span>Resource, Api
+</span><span>
+</span><span>app </span><span style="color:#ff79c6;">= </span><span style="color:#50fa7b;">Flask</span><span>(__name__)
+</span><span>api </span><span style="color:#ff79c6;">= </span><span style="color:#50fa7b;">Api</span><span>(app)
+</span><span>``
+</span><span>
+</span><span style="color:#6272a4;"># Flask Restful resources
+</span><span>We define a single `HelloWorld` resource, that responds </span><span style="color:#ff79c6;">with </span><span>a simple json
+</span><span style="font-style:italic;color:#66d9ef;">object </span><span>on a `</span><span style="color:#ffffff;">GET</span><span>` request.
+</span><span>
+</span><span>``python
+</span><span style="font-style:italic;color:#ff79c6;">class </span><span style="text-decoration:underline;color:#8be9fd;">HelloWorld</span><span>(</span><span style="text-decoration:underline;font-style:italic;color:#8be9fd;">Resource</span><span>):
+</span><span>    </span><span style="font-style:italic;color:#ff79c6;">def </span><span style="color:#50fa7b;">get</span><span>(</span><span style="font-style:italic;color:#ffb86c;">self</span><span>):
+</span><span>        </span><span style="color:#ff79c6;">return </span><span>{</span><span style="color:#f1fa8c;">&#39;hello&#39;</span><span>: </span><span style="color:#f1fa8c;">&#39;world&#39;</span><span>}
+</span><span>``
+</span><span>
+</span><span style="color:#6272a4;"># Routing
+</span><span>`api</span><span style="color:#ff79c6;">.</span><span style="color:#50fa7b;">add_resource</span><span>()` wires the `Resource` </span><span style="background-color:#ff79c6;color:#f8f8f0;">class</span><span> `HelloWorld` into the flask
+</span><span>router at `</span><span style="color:#ff79c6;">/</span><span>`.
+</span><span>
+</span><span>``
+</span><span>api</span><span style="color:#ff79c6;">.</span><span style="color:#50fa7b;">add_resource</span><span>(HelloWorld, </span><span style="color:#f1fa8c;">&#39;/&#39;</span><span>)
+</span><span>``
+</span><span>
+</span><span style="color:#6272a4;"># Run Server
+</span><span>After we have created everything, we run the flask werkzeug server.
+</span><span>
+</span><span>``
+</span><span style="color:#ff79c6;">if </span><span>__name__ </span><span style="color:#ff79c6;">== </span><span style="color:#f1fa8c;">&#39;__main__&#39;</span><span>:
+</span><span>    app</span><span style="color:#ff79c6;">.</span><span style="color:#50fa7b;">run</span><span>()
+</span><span>``
+</span></code></pre>
+<p>marginnote '' &quot;In the previous codeblock, double backticks should be triple, but that messes with markdown highlighting - sorry!&quot; %}</p>
+<p>Magic, right?</p>
+<h2 id="overhead">Overhead</h2>
+<p>Blaze introduces minimal startup overhead, somewhere between 5-20ms, an almost zero runtime overhead (<code>sh</code> is running, I suppose).</p>
+<h3 id="python-shebang">Python Shebang</h3>
+<pre data-lang="shell" style="background-color:#282a36;color:#f8f8f2;" class="language-shell "><code class="language-shell" data-lang="shell"><span>λ ./py-test.py
+</span><span>hi
+</span><span>./py-test.py  0.02s user 0.00s system 94% cpu 0.025 total
+</span></code></pre>
+<h3 id="blaze-shebang">Blaze Shebang</h3>
+<pre data-lang="shell" style="background-color:#282a36;color:#f8f8f2;" class="language-shell "><code class="language-shell" data-lang="shell"><span>λ ./blaze-test.py
+</span><span>hi
+</span><span>./blaze-test.py  0.02s user 0.00s system 67% cpu 0.030 total
+</span></code></pre>
+<h2 id="prior-art-acknowledgements">Prior Art / Acknowledgements</h2>
+<p>Blaze is currently a hacked-together LP tool that is only suitable for one-off scripts. I borrowed the awk code-fence-stripping code from <a href="https://gist.github.com/trauber/4955706">@trauber</a>.</p>
+<h2 id="and-the-name">And the name?</h2>
+<p>Blaze is lit, bro 😎</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

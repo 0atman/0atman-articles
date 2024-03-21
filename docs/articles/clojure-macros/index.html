@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | Clojure: Can macros do something that couldn&#x27;t be done with a function?</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>Clojure: Can macros do something that couldn&#x27;t be done with a function?</h1>
+    
+    <p class="secondary">16 May, 2017</p>
+    
+    <div class="space"></div>
+
+
+    <ul>
+    
+        <li>
+            <a href="https://0atman.com/articles/clojure-macros/#2017-07-31-edit">2017-07-31 EDIT:</a>
+            
+        </li>
+    
+    </ul>
+
+
+    <p>Yes.</p>
+<blockquote>
+<p>When Guido van Rossum proposed adding a case statement to Python, the committee turned him down. So Python has no case statement.</p>
+<p>If Rich [Hickey] didn't want a case statement, but I did, I can have one.</p>
+</blockquote>
+<p><a href="https://stackoverflow.com/questions/43973727/clojure-can-macros-do-something-that-couldnt-be-done-with-a-function">[stackoverflow]</a></p>
+<h3 id="2017-07-31-edit">2017-07-31 EDIT:</h3>
+<p>This revealation started me on the path to presenting the magic of macros and homoiconicity at a Skyscanner Lightning Talk. The slides are <a href="https://docs.google.com/presentation/d/1qEmCWnCR82pOm4sp5FTTVr8TbbtRmWbcjD1dOvcnvpU/">here</a>, click the image below to watch:</p>
+<p><a href="https://www.youtube.com/watch?v=Gkwc3332L-0"><img src="https://img.youtube.com/vi/Gkwc3332L-0/0.jpg" alt="clojure macros talk" /></a></p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

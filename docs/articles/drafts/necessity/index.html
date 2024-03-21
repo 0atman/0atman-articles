@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | </title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1></h1>
+    
+    <div class="space"></div>
+
+
+
+    <p>Title: Necessity is The Mother Of Invention
+Date: 2017-09-26 20:00
+Category: coding
+Status: draft</p>
+<p>Cast your mind back to Easter 2002. I was at the tender age of 16, and discovering all sorts of exciting things about the world, such as this Linux thing everyone was telling me to learn.</p>
+<p>My family went on a SCUBA diving holiday to Hurghada, on the Red Sea in Egypt.</p>
+<p>Day 1: drank tap water</p>
+<p>All I had was a laptop with a fresh install of Slackware Linux on</p>
+<p>No apps, only what came on the 8 disks.</p>
+<p>All week I tried to get to grips with this alien system.</p>
+<p>I read man pages and played around with the terminal, I remember not knowing the difference between a single dot meaning <em>current directory</em> and two dots meaning <em>previous directory</em>.</p>
+<p>Slowly, over the course of my forcable solitude I broke through the barrier to greatness that we all must get through: I understood the command line.</p>
+<p>By the end of the holiday, I hadn't seen the pyramids, the nile, or any Egyption sights. But I <em>had</em> unlocked one of the wonders of the modern world: Linux.</p>
+<p>And the rest is history.</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

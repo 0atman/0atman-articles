@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | The European Union was created to stop WW3</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>The European Union was created to stop WW3</h1>
+    
+    <p class="secondary">23 June, 2016</p>
+    
+    <div class="space"></div>
+
+
+
+    <p><strong>The European Union's importance is simple and profound, in a way that people have forgotten.</strong></p>
+<ul>
+<li>It's not about improving trade (<a href="http://www.ft.com/cms/s/2/3748166e-3151-11e6-ad39-3fee5ffe5b5b.html">though it does</a>).</li>
+<li>Its not about upholding universal human rights (<a href="https://en.wikipedia.org/wiki/European_Court_of_Human_Rights">though it does</a>).</li>
+<li>Nor is it about standing up to international corporate amorality (<a href="http://www.nytimes.com/2015/04/16/business/international/european-union-google-antitrust-case.html?_r=0">though it does</a>)</li>
+</ul>
+<p>The European Union was created, quite simply, <a href="https://en.wikipedia.org/wiki/European_Union#History">to prevent</a> the atrocities of WW2 happening again.
+It is difficult to imagine the term <em>&quot;to stop WW3&quot;</em> used without hyperbole, but this is one of the few cases where it can, <strong>and must</strong> be.</p>
+<p><a href="http://www.bbc.co.uk/news/uk-politics-eu-referendum-36584905">Go vote</a>, you have until 10pm today.</p>
+<p><img src="http://i.imgur.com/ZR0Sa2Y.jpg" alt="" /></p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

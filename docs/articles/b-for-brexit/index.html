@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | B For Brexit</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>B For Brexit</h1>
+    
+    <p class="secondary">24 June, 2016</p>
+    
+    <div class="space"></div>
+
+
+
+    <p><img src="http://i.imgur.com/2LYFN8Y.jpg" alt="london" /></p>
+<p>marginnote 'source' 'Text adapted from <a href="http://www.imdb.com/title/tt0434409/">V For Vendetta</a>, plot suggested by the great British public.' %}</p>
+<p>Our story begins, as these stories often do, with a young, up-and-coming politician.
+He's a deeply religious man and a member of the Conservative party. He's completely single-minded and has no regard for the political process. The more power he attains, the more obvious his zealotry and the more aggressive his supporters become.</p>
+<p><img src="http://i.imgur.com/9BgWR07.jpg" alt="boris" /></p>
+<p>Eventually, his party launches a special project in the name of &quot;national security&quot;. At first, it's believed to be radical anti-terror measures and is pursued without regard to its cost. However, the true goal of this project is power. Complete and total hegemonic domination.
+The project, however, is shut down by a human rights investigation, but the efforts of those involved are not in vain, for a new ability to wage war is born. Imagine surveillance, the most complete surveillance you can, and then imagine that you and you alone control it, but if your ultimate goal is power, how best to use such a weapon?</p>
+<p>It's at this point in our story that along comes a spider.</p>
+<p><img src="http://i.imgur.com/ehS88Kg.jpg" alt="farage" /></p>
+<p>He's a man seemingly without a conscience, for whom the ends always justify the means, and it is he who suggests that their target should not be an enemy of the country but rather the country itself. Three targets are chosen for a false-flag &quot;terrorist attack&quot;: a school, a tube station and a water treatment plant. 
+Several hundred die. Fueled by the media, fear and panic spread quickly, fracturing and dividing the country until, at last, the true goal comes into view. </p>
+<p><img src="http://i.imgur.com/1t7ONFt.jpg" alt="protest" /></p>
+<p>Before the terrorist crisis, no-one would have predicted the results of the election that year, no-one. And then, not long after the election, lo and behold a miracle. Some believe it was the work of God himself, but it was a security company controlled by certain party members that made them all obscenely rich.</p>
+<p>A year later, several extremists are tried, found guilty and executed while a memorial is built to canonise their victims.</p>
+<p><img src="http://i.imgur.com/ycjQIAc.jpg" alt="arrest" /></p>
+<p>But the end result, the true genius of the plan was the fear. Fear became the ultimate tool of this government, and through it, our politician was ultimately appointed to the position of Prime Minister.</p>
+<p>The rest, as they say, is history.</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

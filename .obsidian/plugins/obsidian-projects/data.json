@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {
+        "published_date": {},
+        "categories": {}
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": true,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "posts/",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "f29c750c-7825-40a1-99bb-fbbf6675530c",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "af7462ad-a869-42ba-86c7-624471a1354f",
+      "name": "Pages"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

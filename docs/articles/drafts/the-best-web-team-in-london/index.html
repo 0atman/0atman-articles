@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | </title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1></h1>
+    
+    <div class="space"></div>
+
+
+
+    <p>Title: The Best Web Team In London
+Date: 2015-07-07 10:27
+Category: Coding
+Status: draft
+Tags: canonical, ubuntu, agile, work</p>
+<p>For some time I have been collecting research on best practices in software development teams.
+This started when valve published their employee handbook <code>at what date?</code>. The handbook shared their radical ideas about collaberation and empowerment which made me wonder if other well-respected companies have similarly radical ideas. The following is a collation of my research.</p>
+<p>I've already mentioned Valve, the industry-defining company behind genre-defining games such as Half Life and Counter Strike. They have a reputation for being a great company to work for, with policies that reflect their trust in their employees to make great things.</p>
+<p>At Valve, everyone is a designer, everyone's opinion is valid. A software engineer's opinion about the visual design is just as valid as a UX-er, and visa versa; the teams are integrated. The teams are also fluid, with the potential for moving between projects many times in a week. Valve have an ingenious way of facilitating this. Desks have wheels. <code>picture here</code>. If your teammates this week are at the other side of the office, you can sit next to them and power through.
+Valve value, what they call, &quot;T-Shaped People&quot; <code>picture here</code>. The top of the T shows a large breadth of knowledge, from design to project management. The vertical line indicates a single very detailed field of knowledge, such as AI programming, that the person is a world-class expert in.</p>
+<p>Valve have two pieces of advice for integrated employees: Code is only the beginning, and Program or be programmed, for non-coders and coders, respectively.
+Programmers are enriched by enthusiastic learning of design, legal and other processes, and the advice for non-coders are reminded that Valve is an engineering company, learning more about software engineering will make them move valuable to the company.
+The final two pieces of advice for their employees are about mistakes and hours. Valve are explicit that mistakes are not to be feared, they take every effort to remove the</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>

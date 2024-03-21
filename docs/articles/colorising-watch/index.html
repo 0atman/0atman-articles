@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A remarkably complex markov chain.">
+    <title>0atman&#x27;s blog | Colourising Watch</title>
+    
+    <link rel="stylesheet" href="https://0atman.com/style.css?h=6ba95c4d1002ef029bde">
+    <link rel="stylesheet" href="https://0atman.com/tufte.css?h=abfa0fb087f480372ec2">
+    
+    
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed" href="https://0atman.com/atom.xml">
+    
+    
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://0atman.com/rss.xml">
+    
+</head>
+<body>
+    
+<header class="space">
+    <a href="https:&#x2F;&#x2F;0atman.com">&LeftArrow; Home</a>
+</header>
+
+    
+<main>
+    <h1>Colourising Watch</h1>
+    
+    <p class="secondary">10 March, 2015</p>
+    
+    <div class="space"></div>
+
+
+
+    <p>For many years I had assumed (based on some comments in forums) that the <code>watch</code> unix command had a bug, and could not display colourised terminal output, even when using the <code>-c</code> colour option.</p>
+<p>This made me sad.</p>
+<p>Recently I've been writing tests in py.test, which colourises the output in red for failed test cases. My tests take less than 1s, so while I'm writing them, I run <code>watch py.test</code>, watch it fail, and keep writing it till it passes. </p>
+<p>After a few days of non-coloured output, I resumed my search and found <a href="http://stackoverflow.com/questions/10776977/more-command-alternative-that-does-support-colors">this</a>. My search was over!</p>
+<p>The simple solution is this: Not only must watch be told (with <code>-c</code>) to interpret colours, but the command you are watching must be too. This is because both operate in <code>color=auto</code> mode; colours are only output if the program detects it is being run in an interactive terminal, not a pipe.</p>
+<p>I simply ran <code>watch -c py.test --color=yes</code> and shed tears of joy!</p>
+
+</main>
+
+    <div class="dark-mode-buttons">
+        <button class="dark-mode-button" id="dark-mode-on"><img src="https://0atman.com/dark_mode.svg" width="24" height="24" alt="Dark mode" aria-label="dark mode toggle" title="Dark mode"></button>
+        <button class="dark-mode-button" id="dark-mode-off"><img src="https://0atman.com/light_mode.svg" width="24" height="24" alt="Light mode" aria-label="light mode toggle" title="Light mode"></button>
+    </div>
+    <script>
+        const cls = document.body.classList;
+        const getSessionTheme = sessionStorage.getItem("theme");
+        if (getSessionTheme === "dark") {
+            cls.toggle("dark-mode", true);
+        } else if (getSessionTheme === "light") {
+            cls.toggle("dark-mode", false);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            cls.toggle("dark-mode", true);
+        }
+
+        document.getElementById("dark-mode-on").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", true);
+            sessionStorage.setItem("theme", "dark");
+        });
+        document.getElementById("dark-mode-off").addEventListener("click", function(e) {
+            cls.toggle("dark-mode", false);
+            sessionStorage.setItem("theme", "light");
+        });
+    </script>
+    <noscript>
+        <style>
+            .dark-mode-buttons {
+                display: none;
+            }
+        </style>
+    </noscript>
+</body>
+</html>
