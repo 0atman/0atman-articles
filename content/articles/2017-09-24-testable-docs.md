@@ -34,4 +34,4 @@ You now can execute your readme instructions as part of your build process (perh
 You can get the [gist](https://gist.github.com/0atman/242cf9d6d99f2fbeb182a090213cf74a) of it here.
 
 ### Related
- - [blaze](https://blaze.oat.sh)  is lit. It allows language-agnostic literate-style programming
+ - [blaze](https://github.com/0atman/blaze)  is lit. It allows language-agnostic literate-style programming
